@@ -19,26 +19,12 @@ const navBar = () => {
                 <NavMenu>
                   <NavItem>
                     <NavLinks to='Accueil'>Accueil</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='À propos'>Àpropos</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Programmes'>Programmes</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Evénement'>Evénement</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Festival'>Festival</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Editions'>Editions</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Contact'>Contact</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='Blog'>Blog</NavLinks>
                   </NavItem>
                 </NavMenu>

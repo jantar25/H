@@ -3,7 +3,7 @@ import {Link as LinkRouter} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav=styled.nav`
-background: #202020;
+background: #003366;
 height: 80px;
 display: flex;
 justify-content: center;
@@ -13,7 +13,7 @@ position: sticky;
 top: 0;
 z-index: 10;
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:945px) {
     transition: all 1s ease;
 }
 `
@@ -38,21 +38,21 @@ cursor:pointer;
 export const Logo1 = styled.img`
     width: 100%;
     height: 60px;
-    @media screen and (max-width:1020px) {
+    @media screen and (max-width:1090px) {
         display: none;
     }
-    @media screen and (max-width:890px) {
+    @media screen and (max-width:945px) {
         display: flex;
     }
 `
 export const Logo2 = styled.img`
 display: none;
-    @media screen and (max-width:1020px) {
+    @media screen and (max-width:1090px) {
         display: flex;
         width: 100%;
         height: 60px;
     }
-    @media screen and (max-width:890px) {
+    @media screen and (max-width:945px) {
         display: none;
     }
 `
@@ -60,7 +60,7 @@ display: none;
 export const MobileIcon=styled.div`
 display: none;
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:945px) {
     display: block;
     position:absolute;
     top:0;
@@ -77,11 +77,11 @@ display: flex;
 align-items:center;
 list-style:none;
 text_align:center;
-font-size:1rem;
+font-size:1.1rem;
 
 
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:945px) {
     display: none;
 }
 `
@@ -91,7 +91,7 @@ height: 80px;
 `
 
 export const NavLinks=styled(LinkScroll)`
-color:#fff;
+color:#f5f5f5;
 height: 100%;
 display: flex;
 align-items:center;
@@ -108,18 +108,18 @@ export const NavBtn=styled.nav`
 display: flex;
 align-items:center;
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:945px) {
     display: none;
 }
 `
 
 export const NavBtnLinks=styled(LinkRouter)`
 border-radius:50px;
-background: #01bf71;
+background: #a36a00 ;
 white-space:nowrap;
 padding: 10px 20px;
-color:#010606;
-font-size:16px;
+color:#000;
+font-size:1.1rem;
 outline:none;
 border:none;
 text-decoration:none;
@@ -127,8 +127,8 @@ cursor:pointer;
 transition: all 1.5s ease-in-out;
 
 &:hover{
-    transition: all 1.5s ease-in-out; 
-    background: #010606; 
-    color:#01bf71;
+    transition: all 0.5s ease-in-out; 
+    background: #ffb62e; 
+    color:#f5f5f5;
 }
 `
