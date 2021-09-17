@@ -1,14 +1,18 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import logo from '../../images/logoH.png';
-import {Nav,NavContainer,NavLogo,Logo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLinks} from './Styles'
+import logo1 from '../../images/logoH.png';
+import logo2 from '../../images/logoH2.png';
+import {Nav,NavContainer,NavLogo,Logo1,Logo2,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLinks} from './Styles'
 
 const navBar = () => {
     return (
         <>
            <Nav>
              <NavContainer>
-                <NavLogo to='/'><Logo src={logo} alt="Logo"/></NavLogo>
+                <NavLogo to='/'>
+                  <Logo1 src={logo1} alt="Logo1"/>
+                  <Logo2 src={logo2} alt="Logo2"/>
+                </NavLogo>
                 <MobileIcon>
                   <FaBars />
                 </MobileIcon>
@@ -17,7 +21,7 @@ const navBar = () => {
                     <NavLinks to='Accueil'>Accueil</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='À propos'>À propos</NavLinks>
+                    <NavLinks to='À propos'>Àpropos</NavLinks>
                   </NavItem>
                   <NavItem>
                     <NavLinks to='Programmes'>Programmes</NavLinks>
@@ -37,10 +41,10 @@ const navBar = () => {
                   <NavItem>
                     <NavLinks to='Blog'>Blog</NavLinks>
                   </NavItem>
-                  <NavBtn>
+                </NavMenu>
+                <NavBtn>
                     <NavBtnLinks to='/SignIn'>S'abonner</NavBtnLinks>
                   </NavBtn>
-                </NavMenu>
              </NavContainer>
            </Nav>
         </>

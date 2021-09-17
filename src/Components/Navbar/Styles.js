@@ -8,13 +8,13 @@ height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
-font_zise: 1rem;
+font_zise: 1.5rem;
 position: sticky;
 top: 0;
 z-index: 10;
 
-@media screen and (max-width:960px) {
-    transition: 1s all ease;
+@media screen and (max-width:890px) {
+    transition: all 1s ease;
 }
 `
 
@@ -24,9 +24,9 @@ height: 80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 25px;
+padding: 0 20px;
 z-index: 1;
-max-width: 1100px;
+max-width: 1200px;
 `
 
 export const NavLogo=styled(LinkRouter)`
@@ -35,24 +35,40 @@ justify-self: flex-start;
 align-items:center;
 cursor:pointer;
 `
-export const Logo = styled.img`
+export const Logo1 = styled.img`
     width: 100%;
     height: 60px;
-    margin-left: 10px;
-`;
+    @media screen and (max-width:1020px) {
+        display: none;
+    }
+    @media screen and (max-width:890px) {
+        display: flex;
+    }
+`
+export const Logo2 = styled.img`
+display: none;
+    @media screen and (max-width:1020px) {
+        display: flex;
+        width: 100%;
+        height: 60px;
+    }
+    @media screen and (max-width:890px) {
+        display: none;
+    }
+`
 
 export const MobileIcon=styled.div`
 display: none;
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:890px) {
     display: block;
     position:absolute;
     top:0;
     right:0;
     transform: translate(-100%,60%);
-    font_zise: 2rem;
+    font-size: 2rem;
     cursor:pointer;
-    color:#fff;
+    color: #BEBEBE;
 }
 `
 
@@ -62,9 +78,10 @@ align-items:center;
 list-style:none;
 text_align:center;
 font-size:1rem;
-margin-right:-22px;
 
-@media screen and (max-width:768px) {
+
+
+@media screen and (max-width:890px) {
     display: none;
 }
 `
@@ -91,7 +108,7 @@ export const NavBtn=styled.nav`
 display: flex;
 align-items:center;
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:890px) {
     display: none;
 }
 `
@@ -100,7 +117,7 @@ export const NavBtnLinks=styled(LinkRouter)`
 border-radius:50px;
 background: #01bf71;
 white-space:nowrap;
-padding: 10px 22px;
+padding: 10px 20px;
 color:#010606;
 font-size:16px;
 outline:none;
