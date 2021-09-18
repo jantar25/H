@@ -1,53 +1,43 @@
-import image1 from '../../images/1.jpg'
-import image2 from '../../images/2.jpg'
-import image3 from '../../images/3.jpg'
-import image4 from '../../images/4.jpg'
-import image5 from '../../images/5.jpg'
+import ImageOne from '../../images/image1.jpg'
+import ImageTwo from '../../images/image2.jpg'
+import ImageThree from '../../images/image3.jpg'
+import ImageFour from '../../images/image4.jpg'
+import ImageFive from '../../images/image5.jpg'
 
 export const SlideData=[
     {
     title:'HORTENSIA',
     comment:'communiuquer pur pacifier',
-    path:'/home',
-    labe:'view home',
-    image:image1,
-    alt:'house'
+    image: ImageOne,
+    alt:'house',
 },
 
 {
     title:'HORTENSIA',
     comment:'communiuquer pur pacifier',
-    path:'/home',
-    labe:'view home',
-    image:image2,
+    image:ImageTwo,
     alt:'house'
     },
 
     {
         title:'HORTENSIA',
         comment:'communiuquer pur pacifier',
-        path:'/home',
-        labe:'view home',
-        image:image3,
-        alt:'house'
+        image:ImageThree,
+        alt:'house',
         },
 
         {
             title:'HORTENSIA',
             comment:'communiuquer pur pacifier',
-            path:'/home',
-            labe:'view home',
-            image:image4,
-            alt:'house'
+            image:ImageFour,
+            alt:'house',
             },
 
             {
                 title:'HORTENSIA',
                 comment:'communiuquer pur pacifier',
-                path:'/home',
-                labe:'view home',
-                image:image5,
-                alt:'house'
+                image:ImageFive,
+                alt:'house',
                 },
 
 ]
