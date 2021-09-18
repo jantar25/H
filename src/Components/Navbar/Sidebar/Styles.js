@@ -55,6 +55,7 @@ align-items:center;
 justify-content:center;
 text-decoration:none;
 list-style:none;
+font-size:1.2rem;
 transition:0.3s ease-in-out;
 cursor:pointer;
 

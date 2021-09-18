@@ -18,9 +18,6 @@ const navBar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItem>
-                    <NavLinks to='Accueil'>Accueil</NavLinks>
-                  </NavItem>
-                  <NavItem>
                     <NavLinks to='À propos'>Àpropos</NavLinks>
                   </NavItem>
                   <NavItem>
@@ -30,13 +27,10 @@ const navBar = ({toggle}) => {
                     <NavLinks to='Evénement'>Evénement</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='Festival'>Festival</NavLinks>
+                    <NavLinks to='Editions'>Maison d'Editions</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='Editions'>Editions</NavLinks>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinks to='Contact'>Contact</NavLinks>
+                    <NavLinks to='Contact'>Contacts</NavLinks>
                   </NavItem>
                   <NavItem>
                     <NavLinks to='Blog'>Blog</NavLinks>
