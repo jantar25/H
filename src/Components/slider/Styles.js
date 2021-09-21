@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import {IoArrowForward,IoArrowBack} from 'react-icons/io5'
 
 export const SliderSection=styled.section`
-height:80vh;
+height:90vh;
 max-heigth:1100px;
 position:relative;
 overflow:hidden;
@@ -35,6 +35,17 @@ height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
+&::before{
+    content:'';
+    position:absolute;
+    z-index: 2;
+    width:100%;
+    height:100vh;
+    bottom:0vh;
+    left:0;
+    overflow:hidden;
+    opacity:0.4;
+    background:linear-gradient(to top,rgba(0,0,0,1)100%,rgba(0,0,0,0.2)50%,rgba(0,0,0,0.6)100%);
 `
 
 
@@ -45,18 +56,6 @@ left:0;
 width:100vw;
 height:100vh;
 object-fit:cover;
-
-&::before{
-    content:'';
-    position:absolute;
-    width:100%;
-    height:100vh;
-    bottom:0vh;
-    left:0;
-    overflow:hidden;
-    opacity:0.4;
-    background:linear-gradient(0deg,rgba(0,0,0,0.8)0%,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.6)100%);
-
 }
 `
 export const HeroContent=styled.div`
@@ -82,10 +81,6 @@ p{
 `
 
 export const SliderButton=styled.div`
-position:absolute;
-bottom:50px;
-right:50px;
-display:flex;
 z-index:10
 `
 
@@ -95,7 +90,7 @@ width:50px;
 height:50px;
 color:#000;
 cursor:pointer;
-background:red;
+background:transparent;
 border-radius:50px;
 padding:10px;
 margin-rigth:1rem;
@@ -103,9 +98,21 @@ user-selector: none;
 transition:0.5s;
 
 &:hover{
-    background:green;
-    transform: scale(1.05);  
+    transform: scale(1.2);  
+    border:1px solid;
 }
+`
+export const SliderButtonPrev=styled.div`
+position:absolute;
+display:flex;
+top:50%;
+left:10px;
+`
+export const SliderButtonNext=styled.div`
+position:absolute;
+display:flex;
+top:50%;
+right:10px;
 `
 export const PrevArrow=styled(IoArrowBack)`
 ${arrowButtons}

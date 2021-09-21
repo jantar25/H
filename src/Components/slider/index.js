@@ -1,5 +1,5 @@
 import React,{useEffect,useState,useRef} from 'react'
-import {SliderSection,SliderWrapper,HeroSlide,HeroSlider,HeroImage,HeroContent,SliderButton,PrevArrow,NextArrow} from './Styles'
+import {SliderSection,SliderWrapper,HeroSlide,HeroSlider,HeroImage,HeroContent,SliderButton,PrevArrow,NextArrow,SliderButtonPrev,SliderButtonNext} from './Styles'
 
 const Slider = ({slides}) => {
     const [current,setCurrent]=useState(0);
@@ -51,8 +51,12 @@ const Slider = ({slides}) => {
                      )
                  })}
                  <SliderButton>
-                     <PrevArrow onClick={prevSlide} />
-                     <NextArrow onClick={nextSlide} />
+                    <SliderButtonPrev>
+                        <PrevArrow onClick={prevSlide} />
+                     </SliderButtonPrev>
+                     <SliderButtonNext>
+                        <NextArrow onClick={nextSlide} />
+                     </SliderButtonNext>
                  </SliderButton>
             </SliderWrapper>
         </SliderSection>

@@ -12,11 +12,11 @@ const toggle=()=>{
     setIsOpen(!isOpen);
 }
     return (
-        <>
+        <div>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <Slider slides={SlideData} />
-        </>
+        </div>
     )
 }
 
