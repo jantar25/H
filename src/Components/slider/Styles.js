@@ -44,7 +44,7 @@ align-items:center;
     bottom:0vh;
     left:0;
     overflow:hidden;
- 
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
     
 `
 
@@ -66,7 +66,7 @@ flex-direction:column;
 max-width:1600px;
 width:calc(100%-100px);
 left: 100px;
-bottom:150px;
+bottom:80px;
 color:#fff;
 
 h3{
