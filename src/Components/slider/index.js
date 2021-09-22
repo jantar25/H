@@ -42,7 +42,9 @@ const Slider = ({slides}) => {
                                 <HeroSlider>
                                  <HeroImage src={slide.image} alt={slide.alt} />
                                  <HeroContent>
-                                     <h1>{slide.title}</h1>
+                                     <h3>{slide.title}</h3>
+                                     <h2>{slide.jingle}</h2>
+                                     <h1>{slide.departement}</h1>
                                      <p>{slide.comment}</p>
                                  </HeroContent>
                              </HeroSlider>

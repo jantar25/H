@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import {IoArrowForward,IoArrowBack} from 'react-icons/io5'
 
 export const SliderSection=styled.section`
-height:90vh;
+height:89vh;
 max-heigth:1100px;
 position:relative;
 overflow:hidden;
@@ -44,8 +44,8 @@ align-items:center;
     bottom:0vh;
     left:0;
     overflow:hidden;
-    opacity:0.4;
-    background:linear-gradient(to top,rgba(0,0,0,1)100%,rgba(0,0,0,0.2)50%,rgba(0,0,0,0.6)100%);
+ 
+    
 `
 
 
@@ -59,24 +59,50 @@ object-fit:cover;
 }
 `
 export const HeroContent=styled.div`
-position:relative;
+position:absolute;
 z-index:10;
 display:flex;
 flex-direction:column;
 max-width:1600px;
 width:calc(100%-100px);
-color:#000;
+left: 100px;
+bottom:150px;
+color:#fff;
 
-h1{
-    font-size:clamp(1rem,8vw,4rem);
-    font-weight:500;
+h3{
+    height:40px;
+    font-weight:400;
+    font-family: 'Ubuntu', sans-serif;
     text-align:left;
     margin-bottom:1rem;
+    border-bottom: 2px solid #a36a00;
+}
+
+h2{
+    font-size:clamp(1rem,8vw,2rem);
+    font-weight:600;
+    font-family: 'Lobster', cursive;
+    text-align:left;
+    
+}
+
+h1{
+    font-size:clamp(1rem,8vw,5rem);
+    font-weight:900;
+    font-family: 'Patua One', cursive;
+    color:#a36a00;
+    text-align:left;
+    margin-bottom:1rem;
+
+    
 }
 
 p{
-    font-size:clamp(1rem,8vw,2rem);
-    font-weight:600;   
+    width:400px;
+    font-size:clamp(0.6rem,8vw,1rem);
+    font-weight:200; 
+    font-family: 'Explora', cursive; 
+
 }
 `
 
