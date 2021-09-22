@@ -70,6 +70,7 @@ bottom:80px;
 color:#fff;
 
 h3{
+    font-size:clamp(0.6rem,8vw,1.2rem);
     height:40px;
     font-weight:400;
     font-family: 'Ubuntu', sans-serif;
@@ -98,12 +99,21 @@ h1{
 }
 
 p{
-    width:400px;
+    
     font-size:clamp(0.6rem,8vw,1rem);
     font-weight:200; 
     font-family: 'Explora', cursive; 
+    width:400px;
 
 }
+
+@media screen and (max-width:560px) {
+    left: 30px;
+    p{
+        width:300px;  
+    }
+}
+
 `
 
 export const SliderButton=styled.div`
@@ -114,7 +124,7 @@ z-index:10
 export const arrowButtons=css`
 width:50px;
 height:50px;
-color:#000;
+color:#003366;
 cursor:pointer;
 background:transparent;
 border-radius:50px;
