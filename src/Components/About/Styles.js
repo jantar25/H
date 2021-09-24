@@ -44,16 +44,12 @@ justify-content:center;
 
 export const AboutRows=styled.div`
 display:grid;
-grid-auto-columns:minmax(auto,1fr);
-align-items:center:
-grid-templates-area:${({imgStart})=>(
-    imgStart?`'col2 col1'` : `'col1 col2'`
-)}
+grid-template-columns: 1fr 1fr;
+align-items:center;
+
 
 @media screen and (max-width:760px){
-    grid-templates-area:${({imgStart})=>(
-        imgStart?`'col1' 'col2'` : `'col1 col1' 'col2 col2'`
-    )}
+    grid-auto-columns:1fr;
 }
 `
 
@@ -67,15 +63,44 @@ margin-bottom:15px;
 padding:0 16px;
 grid-area:col2;
 `
-
-export const Question=styled.div``
-
-export const Heading=styled.div``
-
-export const Description=styled.div``
-
-export const BtnWrap=styled.div`
-
+export const Text=styled.div`
+max-width:540px;
+padding-top:0;
+padding-bottom:60px;
+`
+export const Question=styled.div`
+color:blue;
+font-size:20px;
+letter-spacing:1px;
+font-weight:600;
+margin-bottom:16px;
+font-family: 'Patua One', cursive;
 `
 
-export const Button=styled.button``
+export const Heading=styled.h1`
+color:cyan;
+margin-bottom:24px;
+font-weight:700;
+font-family: 'Patua One', cursive;
+font-size:30px;
+`
+
+export const Description=styled.div`
+max-width:440px;
+margin-bottom:24px;
+font-family: 'Patua One', cursive;
+font-size:15px;
+color:red;
+`
+
+export const ImgWrap=styled.div`
+max-width:555px;
+height:100%;
+`
+
+export const Img=styled.img`
+width:100%;
+margin: 0 0 10px 0;
+`
+
+
