@@ -43,9 +43,11 @@ justify-content:center;
 `
 
 export const AboutRows=styled.div`
-display:grid;
+display: grid;
 grid-template-columns: 1fr 1fr;
-align-items:center;
+grid-row: 1fr;
+align-items: center;
+justify-content: center;
 
 
 @media screen and (max-width:760px){
@@ -56,12 +58,10 @@ align-items:center;
 export const AboutColumn1=styled.div`
 margin-bottom:15px;
 padding:0 16px;
-grid-area:col1;
 `
 export const AboutColumn2=styled.div`
 margin-bottom:15px;
 padding:0 16px;
-grid-area:col2;
 `
 export const Text=styled.div`
 max-width:540px;
