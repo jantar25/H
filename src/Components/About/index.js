@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutImage from '../../images/_DSC2964-removebg-preview.png'
-import {AboutContent,AboutSvg,AboutWrapper,AboutRows,AboutColumn1,AboutColumn2,Question,Heading,Description,Text,ImgWrap,Img} from './Styles'
+import {AboutContent,AboutSvg,AboutWrapper,AboutRows,AboutColumn1,AboutColumn2,Question,Heading,Description,Title,Text,ImgWrap,Img} from './Styles'
 
 
 
@@ -18,10 +18,10 @@ const About = () => {
                         <Text>
                             <Question>Qu'est-ce-que Hortensia?</Question>
                             <Heading>Avec Peace In Love comme slogan</Heading>
-                            <Description>HORTENSIA Organisation est une structure Artistique et humanitaire dont la Mission est de Communiquer pour pacifier en apportant a 
+                            <Description><Title>HORTENSIA Organisation</Title> est une structure Artistique et humanitaire dont la Mission est de Communiquer pour pacifier en apportant a 
                                 chacun et a tous la vraie paix et le vrai amour du coeur.
                                 Ayant pour vision d'un present et un avenir ou les relations des jeunes des differentes cultures sont rendue plus humaines et plus proches.
-                                Oeuvrant dans l'art,culture et Education;Paix et Engagement;Entrepreneuriat social. 
+                                Oeuvrant dans l'art,culture et Education;Paix et Engagement;Entrepreneuriat social.
                             </Description>
                         </Text>
                     </AboutColumn1>

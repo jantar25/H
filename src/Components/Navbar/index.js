@@ -21,10 +21,10 @@ const navBar = ({toggle}) => {
                     <NavLinks to='À propos'>Àpropos</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='Programmes'>Programmes</NavLinks>
+                    <NavLinks to='Evénement'>Evénement</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to='Evénement'>Evénement</NavLinks>
+                    <NavLinks to='Programmes'>Hortelins(es)</NavLinks>
                   </NavItem>
                   <NavItem>
                     <NavLinks to='Editions'>Maison d'Editions</NavLinks>

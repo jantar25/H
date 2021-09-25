@@ -1,10 +1,13 @@
 import styled from 'styled-components'
+import aboutBg from '../../images/AboutBkg.jpg'
 
 export const AboutContent=styled.section`
 height:100vh;
 max-heigth:1100px;
 position:relative;
 overflow:hidden;
+background-image: url(${aboutBg});
+background-size: cover;
 `
 
 export const AboutSvg=styled.div`
@@ -69,20 +72,20 @@ padding-top:0;
 padding-bottom:60px;
 `
 export const Question=styled.div`
-color:blue;
-font-size:20px;
-letter-spacing:1px;
+color:#003366;
+font-size:30px;
 font-weight:600;
-margin-bottom:16px;
+margin-bottom:0;
 font-family: 'Patua One', cursive;
 `
 
 export const Heading=styled.h1`
-color:cyan;
+color: #938c8c;
 margin-bottom:24px;
-font-weight:700;
+font-weight:400;
 font-family: 'Patua One', cursive;
-font-size:30px;
+font-size:40px;
+border-bottom: 5px solid #a36a00; 
 `
 
 export const Description=styled.div`
@@ -90,8 +93,14 @@ max-width:440px;
 margin-bottom:24px;
 font-family: 'Patua One', cursive;
 font-size:15px;
-color:red;
+color:#555555 ;
 `
+export const Title=styled.h4`
+font-family: 'Patua One', cursive;
+font-size:20px;
+color:#a36a00;
+`
+
 
 export const ImgWrap=styled.div`
 max-width:555px;
