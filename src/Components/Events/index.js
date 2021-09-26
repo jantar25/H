@@ -13,21 +13,21 @@ const Events = () => {
                     <EventWrapper>
                         <EventCard>
                             <EventImg src={Event1} alt={Event1} />
-                            <EventTitle>Meat Variety</EventTitle>
+                            <EventTitle>WAUMBA Festival</EventTitle>
                             <EventDescription>We labour the land whith natural means,no chemical product in our vegetable</EventDescription>
-                            <EventBtn>Purchase</EventBtn>
+                            <EventBtn>En Savoir Plus...</EventBtn>
                         </EventCard>
                         <EventCard>
                             <EventImg src={Event2} alt={Event2} />
-                            <EventTitle>Meat Variety</EventTitle>
+                            <EventTitle>Tucheke Pamoja</EventTitle>
                             <EventDescription>We labour the land whith natural means,no chemical product in our vegetable</EventDescription>
-                            <EventBtn>Purchase</EventBtn>
+                            <EventBtn>En Savoir Plus...</EventBtn>
                         </EventCard>
                         <EventCard>
                             <EventImg src={Event3} alt={Event3} />
-                            <EventTitle>Meat Variety</EventTitle>
+                            <EventTitle>Sestri</EventTitle>
                             <EventDescription>We labour the land whith natural means,no chemical product in our vegetable</EventDescription>
-                            <EventBtn>Purchase</EventBtn>
+                            <EventBtn>En Savoir Plus...</EventBtn>
                         </EventCard>
                     </EventWrapper>
                 </EventsTrail> 

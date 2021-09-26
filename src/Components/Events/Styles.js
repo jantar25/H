@@ -41,18 +41,22 @@ overflow: hidden;
 
 export const EventCard=styled.div`
 margin: 10px 10px 30px;
-height: 570px;
+height: 550px;
 width: 400px;
 border: 5px;
+border-radius: 5px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 position: relative;
-background:blue;
+background:whitesmoke;
+box-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.22);
+transition: all 0.5s ease-out;
 
 &:hover {
     transform: scale(1.03);
     margin: 0 10px;
+    transition: all 0.5s ease-out;
   }
 
 `
@@ -61,17 +65,16 @@ export const EventImg=styled.img`
 width: 400px;
 height: 425px;
 object-fit: cover;
-transition: all 0.5s ease-out;
 
 `
 
 export const EventTitle=styled.h2`
-color: #000;
+color: #003366;
 padding: 0 10px;
 font-size: 40px;
 font-weight: bold;
 transition: all 1s ease-in-out;
-border-bottom: 5px solid #000; 
+border-bottom: 5px solid #a36a00; 
 `
 
 export const EventDescription=styled.p`
@@ -81,11 +84,12 @@ transition: all 1s ease-in-out;
 color: #000;
 `
 export const EventBtn=styled.button`
-width: 300px;
+width: 200px;
 padding: 10px;
 border: none;
 outline: none;
 text-decoration: none;
+margin-left: 10px;
 margin-bottom: 10px;
 font-size: 20px;
 font-weight: bold;
