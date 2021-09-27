@@ -2,8 +2,7 @@ import styled from "styled-components";
 import aboutBg from "../../images/EventsBkg.png";
 
 export const ProgramsContent = styled.section`
-height:75vh;
-max-heigth:1100px;
+height:80vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -42,6 +41,7 @@ export const ProgramsCard = styled.div`
   height: 270px;
   width: 300px;
   border: 5px;
+  margin-top: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
