@@ -44,9 +44,6 @@ const navBar = ({ toggle }) => {
             <NavItem>
               <NavLinks to="Contact">Contacts</NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="Blog">Blog</NavLinks>
-            </NavItem>
           </NavMenu>
           <NavBtn>
             <NavBtnLinks to="/SignIn">S'abonner</NavBtnLinks>

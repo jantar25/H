@@ -6,6 +6,7 @@ import Slider from "../Components/slider";
 import About from "../Components/About";
 import Events from "../Components/Events";
 import Activity from "../Components/Activity";
+import Programs from "../Components/Programs";
 
 import { SlideData } from "../Components/slider/sliderData";
 
@@ -22,6 +23,7 @@ const Home = () => {
       <About />
       <Events />
       <Activity />
+      <Programs />
     </div>
   );
 };
