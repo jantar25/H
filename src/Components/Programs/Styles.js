@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import aboutBg from "../../images/EventsBkg.png";
+import aboutBg from "../../images/replacementbkg.jpg";
 
 export const ProgramsContent = styled.section`
 height:80vh;

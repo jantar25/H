@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 import {
   FooterContainer,
   FooterLinks,
@@ -61,16 +62,16 @@ const Footer = () => {
           <FooterRight>© HORTENSIA 2021,all right reserved</FooterRight>
           <SocialMediaIcons>
             <SocialMediaLinks href="/">
-              <i class="fab fa-facebook"></i>
+              <SocialIcon network="facebook" />
             </SocialMediaLinks>
             <SocialMediaLinks href="/">
-              <i class="fab fa-instagram"></i>
+              <SocialIcon network="instagram" />
             </SocialMediaLinks>
             <SocialMediaLinks href="/">
-              <i class="fab fa-youtube"></i>
+              <SocialIcon network="youtube" />
             </SocialMediaLinks>
             <SocialMediaLinks href="/">
-              <i class="fab fa-twitter"></i>
+              <SocialIcon network="twitter" />
             </SocialMediaLinks>
           </SocialMediaIcons>
         </SocialMediaWrap>
