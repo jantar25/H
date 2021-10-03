@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ActivityContent = styled.section`
-  height: 80vh;
+  height: 90vh;
   max-heigth: 1100px;
   position: relative;
   overflow: hidden;
@@ -83,7 +83,7 @@ export const ImgWrap = styled.div`
     position: absolute;
     z-index: 2;
     width: 50%;
-    height: 80vh;
+    height: 90vh;
     bottom: 0vh;
     right: 40%;
     overflow: hidden;

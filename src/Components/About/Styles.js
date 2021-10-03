@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import aboutBg from "../../images/AboutBkg.jpg";
 
 export const AboutContent = styled.section`
-  height: 100vh;
   max-heigth: 1100px;
   position: relative;
   overflow: hidden;
-  background-image: url(${aboutBg});
-  background-size: cover;
+  background: #fff;
 `;
 
 export const AboutSvg = styled.div`
@@ -36,11 +33,11 @@ export const AboutSvg = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 200px;
   padding: 0 24px;
   justify-content: center;
 `;
@@ -53,7 +50,7 @@ export const AboutRows = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 760px) {
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -68,11 +65,11 @@ export const AboutColumn2 = styled.div`
 export const Text = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 `;
 export const Question = styled.div`
   color: #003366;
-  font-size: 30px;
+  font-size: clamp(0.6rem, 8vw, 1.7rem);
   font-weight: 600;
   margin-bottom: 0;
   font-family: "Patua One", cursive;
@@ -83,7 +80,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Patua One", cursive;
-  font-size: 40px;
+  font-size: clamp(1rem, 8vw, 2rem);
   border-bottom: 5px solid #a36a00;
 `;
 
@@ -91,12 +88,12 @@ export const Description = styled.div`
   max-width: 440px;
   margin-bottom: 24px;
   font-family: "Patua One", cursive;
-  font-size: 15px;
+  font-size: clamp(0.4rem, 8vw, 0.8rem);
   color: #555555;
 `;
 export const Title = styled.h4`
   font-family: "Patua One", cursive;
-  font-size: 20px;
+  font-size: clamp(0.5rem, 8vw, 1.2rem);
   color: #a36a00;
 `;
 
@@ -111,5 +108,5 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   margin: 0 0 10px 0;
   object-fit: cover;
-  width: 65%;
+  width: 100%;
 `;

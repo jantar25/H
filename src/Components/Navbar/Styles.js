@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 945px) {
+  @media screen and (max-width: 900px) {
     transition: all 1s ease;
   }
 `;
@@ -24,9 +24,9 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1300px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -38,29 +38,12 @@ export const NavLogo = styled(LinkRouter)`
 export const Logo1 = styled.img`
   width: 100%;
   height: 60px;
-  @media screen and (max-width: 1090px) {
-    display: none;
-  }
-  @media screen and (max-width: 945px) {
-    display: flex;
-  }
-`;
-export const Logo2 = styled.img`
-  display: none;
-  @media screen and (max-width: 1090px) {
-    display: flex;
-    width: 100%;
-    height: 60px;
-  }
-  @media screen and (max-width: 945px) {
-    display: none;
-  }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 945px) {
+  @media screen and (max-width: 900px) {
     display: block;
     position: absolute;
     top: 0;
@@ -79,7 +62,7 @@ export const NavMenu = styled.ul`
   text_align: center;
   font-size: 1.1rem;
 
-  @media screen and (max-width: 945px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -95,7 +78,7 @@ export const NavLinks = styled(LinkScroll)`
   align-items: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 0 1rem;
+  padding: 0 10px;
   transition: all 0.3s ease-in-out;
 
   &:hover {
@@ -111,7 +94,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 945px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
