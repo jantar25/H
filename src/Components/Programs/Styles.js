@@ -2,25 +2,25 @@ import styled from "styled-components";
 import aboutBg from "../../images/replacementbkg.jpg";
 
 export const ProgramsContent = styled.section`
-height:80vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position:relative;
-overflow:hidden;
-background-image: url(${aboutBg});
-background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(${aboutBg});
+  background-size: cover;
 
-h1 {
-    position:absolute;
+  h1 {
+    position: absolute;
     font-size: 2rem;
     color: #003366;
-    left:50px;
-    top:50px;
-    width:80%;
-    border-bottom: 2px solid #a36a00;  
-   
+    left: 50px;
+    top: 50px;
+    width: 80%;
+    border-bottom: 2px solid #a36a00;
+  }
 `;
 export const ProgramsTrail = styled.div`
   display: flex;

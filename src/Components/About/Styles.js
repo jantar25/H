@@ -69,7 +69,7 @@ export const Text = styled.div`
 `;
 export const Question = styled.div`
   color: #003366;
-  font-size: clamp(0.6rem, 8vw, 1.7rem);
+  font-size: clamp(1rem, 8vw, 2rem);
   font-weight: 600;
   margin-bottom: 0;
   font-family: "Patua One", cursive;
@@ -80,7 +80,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Patua One", cursive;
-  font-size: clamp(1rem, 8vw, 2rem);
+  font-size: clamp(1.5rem, 8vw, 3rem);
   border-bottom: 5px solid #a36a00;
 `;
 
@@ -88,7 +88,7 @@ export const Description = styled.div`
   max-width: 440px;
   margin-bottom: 24px;
   font-family: "Patua One", cursive;
-  font-size: clamp(0.4rem, 8vw, 0.8rem);
+  font-size: clamp(0.4rem, 8vw, 0.9rem);
   color: #555555;
 `;
 export const Title = styled.h4`

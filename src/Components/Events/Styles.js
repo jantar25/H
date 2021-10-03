@@ -2,46 +2,42 @@ import styled from "styled-components";
 import aboutBg from "../../images/EventsBkg.png";
 
 export const EventsContent = styled.section`
-height:120vh;
-max-heigth:1100px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-position:relative;
-overflow:hidden;
-background-image: url(${aboutBg});
-background-size: cover;
+  background-image: url(${aboutBg});
+  background-size: cover;
 
-h1 {
-    position:absolute;
-    font-size: 2rem;
+  h1 {
+    font-size: 2.5rem;
     color: #003366;
-    left:50px;
-    top:50px;
-    width:80%;
-    border-bottom: 2px solid #a36a00;  
-   
+    margin: 30px 50px;
+    width: 80%;
+    border-bottom: 2px solid #a36a00;
+  }
 `;
+
 export const EventsTrail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  overflow: hidden;
+  margin-top: 40px;
 `;
 export const EventWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const EventCard = styled.div`
-  margin: 20px 10px 10px;
-  height: 550px;
-  width: 400px;
+  margin: 50px 20px;
+  height: 500px;
+  width: 95%;
   border: 5px;
   border-radius: 10px;
   display: flex;
@@ -53,7 +49,7 @@ export const EventCard = styled.div`
   transition: all 0.5s ease-in-out;
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     margin: 0 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: all 0.5s ease-out;
@@ -61,9 +57,11 @@ export const EventCard = styled.div`
 `;
 
 export const EventImg = styled.img`
-  width: 400px;
-  height: 425px;
+  width: 100%;
+  height: 340px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `;
 
 export const EventTitle = styled.h2`
