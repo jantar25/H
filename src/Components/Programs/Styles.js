@@ -2,7 +2,6 @@ import styled from "styled-components";
 import aboutBg from "../../images/replacementbkg.jpg";
 
 export const ProgramsContent = styled.section`
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,11 +12,9 @@ export const ProgramsContent = styled.section`
   background-size: cover;
 
   h1 {
-    position: absolute;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #003366;
-    left: 50px;
-    top: 50px;
+    margin: 30px 50px;
     width: 80%;
     border-bottom: 2px solid #a36a00;
   }
@@ -34,12 +31,20 @@ export const ProgramsWrapper = styled.div`
   grid-template-rows: 1fr;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProgramsCard = styled.div`
   margin: 20px 10px 10px;
   height: 270px;
-  width: 300px;
+  width: 400px;
   border: 5px;
   margin-top: 20px;
   border-radius: 10px;
@@ -59,7 +64,7 @@ export const ProgramsCard = styled.div`
 `;
 
 export const ProgramsImg = styled.img`
-  width: 300px;
+  width: 100%;
   height: 190px;
   object-fit: cover;
   border-top-left-radius: 10px;

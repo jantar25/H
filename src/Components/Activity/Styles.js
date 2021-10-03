@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ActivityContent = styled.section`
-  height: 90vh;
-  max-heigth: 1100px;
   position: relative;
   overflow: hidden;
   background: #000;
@@ -22,14 +20,46 @@ export const ActivityRows = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 760px) {
-    grid-auto-columns: 1fr;
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 100%;
   }
 `;
 
 export const ActivityColumn1 = styled.div`
   height: 100%;
   width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 90vh;
+    bottom: 0vh;
+    right: 40%;
+    overflow: hidden;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  @media screen and (max-width: 960px) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      top: 0vh;
+      right: 0%;
+      overflow: hidden;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+  }
 `;
 export const ActivityColumn2 = styled.div`
   height: 100%;
@@ -78,21 +108,6 @@ export const ImgWrap = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    width: 50%;
-    height: 90vh;
-    bottom: 0vh;
-    right: 40%;
-    overflow: hidden;
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  }
 `;
 
 export const Img = styled.img`
