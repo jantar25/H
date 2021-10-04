@@ -27,19 +27,19 @@ const navBar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Àpropos</NavLinks>
+              <NavLinks to="Slider">Àpropos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Events">Evénement</NavLinks>
+              <NavLinks to="Events">Evénement</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Programs">Programmes</NavLinks>
+              <NavLinks to="Programs">Programmes</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/Edition">Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contact">Contacts</NavLinks>
+              <NavLinks to="Footer">Contacts</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

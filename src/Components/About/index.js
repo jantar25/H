@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect } from "react";
 import AboutImage from "../../images/aboutImg.png";
 import {
   AboutContent,
@@ -17,6 +20,10 @@ import {
 } from "./Styles";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({duration:3000});
+  }, [])
   return (
     <AboutContent>
       <AboutSvg>
@@ -32,9 +39,9 @@ const About = () => {
           ></path>
         </svg>
       </AboutSvg>
-      <AboutWrapper>
+      <AboutWrapper >
         <AboutRows>
-          <AboutColumn1>
+          <AboutColumn1 data-aos="fade-right">
             <Text>
               <Question>Qu'est-ce-que Hortensia?</Question>
               <Heading>Avec Peace In Love comme slogan</Heading>
@@ -50,7 +57,7 @@ const About = () => {
               </Description>
             </Text>
           </AboutColumn1>
-          <AboutColumn2>
+          <AboutColumn2 data-aos="fade-left">
             <ImgWrap>
               <Img src={AboutImage} alt="AboutImage" />
             </ImgWrap>
