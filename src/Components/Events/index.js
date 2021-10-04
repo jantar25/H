@@ -14,7 +14,7 @@ import Event3 from "../../images/Event3.JPG";
 
 const Events = () => {
   return (
-    <EventsContent>
+    <EventsContent id='Events'>
       <h1>Nos Evénements</h1>
       <EventsTrail>
         <EventWrapper>

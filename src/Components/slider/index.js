@@ -33,7 +33,7 @@ const Slider = ({slides}) => {
         return null
     }
     return (
-        <SliderSection>
+        <SliderSection id='Slider'>
             <SliderWrapper>
                  {slides.map((slide,index)=>{
                      return(

@@ -19,7 +19,7 @@ import FooterImage from "../../images/logoH2.png";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer id='Footer'>
       <FooterLinks>
         <FooterWrapper>
           <FooterItems>

@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect } from "react";
 import ActivityImage from "../../images/ActivityImage.jpg";
 import {
   ActivityContent,
@@ -16,16 +19,19 @@ import {
 } from "./Styles";
 
 const Activity = () => {
+  useEffect(() => {
+    AOS.init({duration:3000});
+  }, [])
   return (
     <ActivityContent>
       <ActivityWrapper>
         <ActivityRows>
-          <ActivityColumn1>
+          <ActivityColumn1 >
             <ImgWrap>
               <Img src={ActivityImage} alt="ActitivityImage" />
             </ImgWrap>
           </ActivityColumn1>
-          <ActivityColumn2>
+          <ActivityColumn2 data-aos="zoom-in-down">
             <Text>
               <Presentation>Nos Membres</Presentation>
               <Heading>Ayant Une vie epanuis et Familiale</Heading>
