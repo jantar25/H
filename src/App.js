@@ -1,6 +1,7 @@
 import './App.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import { useState} from "react";
+import ScrollToTop from './Components/Scrollontop'
 import Navbar from './Components/Navbar'
 import Sidebar from './Components/Navbar/Sidebar';
 import Home from './Pages/Home'
@@ -18,6 +19,7 @@ function App() {
   };
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Switch>

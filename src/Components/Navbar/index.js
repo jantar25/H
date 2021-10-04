@@ -27,7 +27,7 @@ const navBar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks smooth to="#Slider">Àpropos</NavLinks>
+              <NavLinks smooth to="#About">Àpropos</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks smooth to="#Events">Evénement</NavLinks>

@@ -25,7 +25,7 @@ const About = () => {
     AOS.init({duration:3000});
   }, [])
   return (
-    <AboutContent>
+    <AboutContent id='About'>
       <AboutSvg>
         <svg
           data-name="Layer 1"
