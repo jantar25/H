@@ -71,7 +71,7 @@ export const NavItem = styled.li`
   height: 70px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(LinkRouter)`
   color: #f5f5f5;
   height: 100%;
   display: flex;
