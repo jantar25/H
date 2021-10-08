@@ -8,7 +8,7 @@ import Home from './Pages/Home'
 import Edition from './Pages/Edition'
 import SignIn from './Pages/SignIn'
 import Programs from './Components/Programs'
-import Events from './Components/Events'
+import Events from './Pages/Events'
 import Footer from "./Components/Footer";
 
 
@@ -25,7 +25,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/Events' exact component={Events} />
-        <Route path='/Programs' exact component={Programs} />
+        <Route path='/' exact component={Programs} />
         <Route path='/Edition' exact component={Edition} />
         <Route path='/SignIn' exact component={SignIn} />
       </Switch>
