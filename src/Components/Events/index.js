@@ -3,10 +3,15 @@ import {
   EventsContent,
   EventsTrail,
   EventWrapper,
+  MainEventCard,
+  MainEventImg,
+  MainEventTitle,
+  MainEventDescription,
+  EventCards,
   EventCard,
-  EventImg,
-  EventTitle,
-  EventDescription,
+  EventsImg,
+  EventsTitle,
+  EventsDescription,
   EventBtn,
 } from "./Styles";
 import Event1 from "../../images/Event1.JPG";
@@ -18,24 +23,51 @@ const Events = () => {
       <h1>Nos Evénements</h1>
       <EventsTrail>
         <EventWrapper>
-          <EventCard>
-            <EventImg src={Event1} alt={Event1} />
-            <EventTitle>WAUMBA Festival</EventTitle>
-            <EventDescription>
+          <MainEventCard>
+            <MainEventImg src={Event1} alt={Event1} />
+            <MainEventTitle>WAUMBA Festival</MainEventTitle>
+            <MainEventDescription>
+              We labour the land whith natural means,no chemical product in our
+              vegetable,We labour the land whith natural means,no chemical product in our
+              vegetable,We labour the land whith natural means,no chemical product in our
+              vegetable
+            </MainEventDescription>
+            <EventBtn>En savoir plus... </EventBtn>
+          </MainEventCard>
+          <EventCards>
+            <EventCard>
+            <EventsImg src={Event3} alt={Event3} />
+            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+            <EventsDescription>
               We labour the land whith natural means,no chemical product in our
               vegetable
-            </EventDescription>
-            <EventBtn>En savoir plus... </EventBtn>
-          </EventCard>
-          <EventCard>
-            <EventImg src={Event3} alt={Event3} />
-            <EventTitle>TUCHEKE Pamoja</EventTitle>
-            <EventDescription>
+            </EventsDescription>
+            </EventCard>
+            <EventCard>
+            <EventsImg src={Event3} alt={Event3} />
+            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+            <EventsDescription>
               We labour the land whith natural means,no chemical product in our
               vegetable
-            </EventDescription>
-            <EventBtn>En savoir plus... </EventBtn>
-          </EventCard>
+            </EventsDescription>
+            </EventCard>
+            <EventCard>
+            <EventsImg src={Event3} alt={Event3} />
+            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+            <EventsDescription>
+              We labour the land whith natural means,no chemical product in our
+              vegetable
+            </EventsDescription>
+            </EventCard>
+            <EventCard>
+            <EventsImg src={Event3} alt={Event3} />
+            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+            <EventsDescription>
+              We labour the land whith natural means,no chemical product in our
+              vegetable
+            </EventsDescription>
+            </EventCard>
+          </EventCards>
         </EventWrapper>
       </EventsTrail>
     </EventsContent>

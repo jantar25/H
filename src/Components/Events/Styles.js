@@ -20,7 +20,6 @@ export const EventsTrail = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: 40px;
 `;
 export const EventWrapper = styled.div`
   display: grid;
@@ -34,12 +33,10 @@ export const EventWrapper = styled.div`
   }
 `;
 
-export const EventCard = styled.div`
-  margin: 50px 20px;
+export const MainEventCard = styled.div`
+  margin:20px;
   height: 500px;
-  width: 95%;
-  border: 5px;
-  border-radius: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,37 +44,82 @@ export const EventCard = styled.div`
   background: whitesmoke;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease-in-out;
-
-  &:hover {
-    transform: scale(1.01);
-    margin: 0 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: all 0.5s ease-out;
+`;
+export const EventCards = styled.div`
+margin:20px;
+height: 500px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+background: whitesmoke;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
+transition: all 0.5s ease-in-out;
   }
 `;
 
-export const EventImg = styled.img`
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+export const EventCard = styled.div`
+  margin: 10px;
+  height: 20%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  background: whitesmoke;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+  }
 `;
 
-export const EventTitle = styled.h2`
+
+
+export const MainEventImg = styled.img`
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+`;
+
+export const EventsImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const MainEventTitle = styled.h2`
   color: #003366;
   padding: 0 10px;
   font-size: 40px;
   font-weight: bold;
   width: 90%;
   border-bottom: 2px solid #a36a00;
+  z-index:1;
 `;
 
-export const EventDescription = styled.p`
+export const EventsTitle = styled.h2`
+  color: #003366;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  align-text:center;
+  width: 50%;
+  height: 70%;
+  border-bottom: 2px solid #a36a00;
+`;
+
+export const MainEventDescription = styled.p`
   padding: 10px;
   font-size: 18px;
   color: #000;
 `;
+
+export const EventsDescription = styled.p`
+  padding: 10px;
+  font-size: 15px;
+  color: #000;
+`;
+
 export const EventBtn = styled.button`
   width: 200px;
   padding: 10px;
