@@ -42,6 +42,24 @@ const Programs = () => {
               vegetable
             </ProgramsDescription>
           </ProgramsCard>
+          </ProgramsWrapper>
+          <ProgramsWrapper>
+          <ProgramsCard>
+            <ProgramsImg src={Event3} alt={Event3} />
+            <ProgramsTitle>TUCHEKE Pamoja</ProgramsTitle>
+            <ProgramsDescription>
+              We labour the land whith natural means,no chemical product in our
+              vegetable
+            </ProgramsDescription>
+          </ProgramsCard>
+          <ProgramsCard>
+            <ProgramsImg src={Event3} alt={Event3} />
+            <ProgramsTitle>TUCHEKE Pamoja</ProgramsTitle>
+            <ProgramsDescription>
+              We labour the land whith natural means,no chemical product in our
+              vegetable
+            </ProgramsDescription>
+          </ProgramsCard>
           <ProgramsCard>
             <ProgramsImg src={Event3} alt={Event3} />
             <ProgramsTitle>TUCHEKE Pamoja</ProgramsTitle>

@@ -30,7 +30,7 @@ const navBar = ({ toggle }) => {
               <NavLinks smooth to="#About">Àpropos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks smooth to="#Events">Evénement</NavLinks>
+              <NavLinks smooth to="/Events">Evénement</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks smooth to="#Programs">Programmes</NavLinks>
