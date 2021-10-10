@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HashLink as LinkScroll} from "react-router-hash-link";
 
 export const FooterContainer = styled.section`
   background-color: #131313;
@@ -76,12 +77,15 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
-export const FooterLogo = styled.div`
+
+
+export const FooterLogo = styled(LinkScroll)`
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
   cursor: pointer;
 `;
+
 
 export const FooterImg = styled.img`
   width: 50px;

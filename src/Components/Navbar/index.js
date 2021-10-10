@@ -10,7 +10,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavScrolls,
   NavBtn,
   NavBtnLinks,
 } from "./Styles";
@@ -28,19 +27,19 @@ const navBar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavScrolls smooth to="#About">Àpropos</NavScrolls>
+              <NavLinks to="/Apropos">Àpropos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Events">Evénement</NavLinks>
+              <NavLinks to="/Evenement">Evénement</NavLinks>
             </NavItem>
             <NavItem>
-              <NavScrolls smooth to="#Programs">Programmes</NavScrolls>
+              <NavLinks to="/Programme">Programmes</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/Edition">Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
-              <NavScrolls smooth to="#Footer">Contacts</NavScrolls>
+              <NavLinks to="/Contact">Contacts</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

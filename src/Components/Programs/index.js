@@ -14,7 +14,7 @@ import Event3 from "../../images/Event3.JPG";
 
 const Programs = () => {
   return (
-    <ProgramsContent id='Programs'>
+    <ProgramsContent>
       <h1>Nos Programmes</h1>
       <ProgramsTrail>
         <ProgramsWrapper>

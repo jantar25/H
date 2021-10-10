@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
-import { HashLink as LinkScroll} from "react-router-hash-link";
 
 
 export const Nav = styled.nav`
@@ -91,24 +90,6 @@ export const NavLinks = styled(LinkRouter)`
   }
 `;
 
-export const NavScrolls = styled(LinkScroll)`
-  color: #f5f5f5;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 0 10px;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    border-bottom: 5px solid #a36a00;
-  }
-
-  &.active {
-    border-bottom: 5px solid #a36a00;
-  }
-`;
 
 export const NavBtn = styled.nav`
   display: flex;

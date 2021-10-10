@@ -19,7 +19,7 @@ import FooterImage from "../../images/logoH2.png";
 
 const Footer = () => {
   return (
-    <FooterContainer id='Footer'>
+    <FooterContainer>
       <FooterLinks>
         <FooterWrapper>
           <FooterItems>
@@ -56,7 +56,7 @@ const Footer = () => {
       </FooterLinks>
       <FooterSocialMedia>
         <SocialMediaWrap>
-          <FooterLogo>
+          <FooterLogo smooth to="#Slider">
             <FooterImg src={FooterImage} alt={FooterImage} />
           </FooterLogo>
           <FooterRight>© HORTENSIA 2021,all right reserved</FooterRight>

@@ -1,14 +1,15 @@
 import './App.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import { useState} from "react";
-import ScrollToTop from './Components/Scrollontop'
 import Navbar from './Components/Navbar'
 import Sidebar from './Components/Navbar/Sidebar';
 import Home from './Pages/Home'
+import Apropos from './Pages/Apropos'
+import Evenement from './Pages/Evenement'
+import Programme from './Pages/Programme'
 import Edition from './Pages/Edition'
+import Contact from './Pages/Contacts'
 import SignIn from './Pages/SignIn'
-import Programs from './Components/Programs'
-import Events from './Pages/Events'
 import Footer from "./Components/Footer";
 
 
@@ -19,14 +20,15 @@ function App() {
   };
   return (
     <BrowserRouter>
-    <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/Events' exact component={Events} />
-        <Route path='/' exact component={Programs} />
+        <Route path='/Apropos' exact component={Apropos} />
+        <Route path='/Evenement' exact component={Evenement} />
+        <Route path='/Programme' exact component={Programme} />
         <Route path='/Edition' exact component={Edition} />
+        <Route path='/Contact' exact component={Contact} />
         <Route path='/SignIn' exact component={SignIn} />
       </Switch>
       <Footer />
