@@ -25,8 +25,8 @@ export const EventWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  position: relative;
   overflow: hidden;
+  margin:20px;
 
   @media screen and (max-width: 780px) {
     grid-template-columns: 1fr;
@@ -34,7 +34,7 @@ export const EventWrapper = styled.div`
 `;
 
 export const MainEventCard = styled.div`
-  margin:20px;
+  margin-right:10px;
   height: 500px;
   width: 100%;
   display: flex;
@@ -46,7 +46,7 @@ export const MainEventCard = styled.div`
   transition: all 0.5s ease-in-out;
 `;
 export const EventCards = styled.div`
-margin:20px;
+margin-left:10px;
 height: 500px;
 width: 100%;
 display: flex;
@@ -62,30 +62,44 @@ transition: all 0.5s ease-in-out;
 export const EventCard = styled.div`
   margin: 10px;
   height: 20%;
-  width: 90%;
+  width: 95%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  background: whitesmoke;
+  background: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease-in-out;
   }
 `;
 
+export const MainImageContainer = styled.div`
+width: 100%;
+height: 55%;
+`
 
 
 export const MainEventImg = styled.img`
   width: 100%;
-  height: 70%;
-  object-fit: cover;
-`;
-
-export const EventsImg = styled.img`
-  width: 100%;
   height: 100%;
   object-fit: cover;
 `;
+
+export const ImageContainer = styled.div`
+height: 100%;
+width: 80%;
+`
+
+export const EventsImg = styled.img`
+object-fit: cover;
+width: 100%;
+height: 100%;
+`;
+
+export const MainDescriptionContainer = styled.div`
+height: 45%;
+`
+
 
 export const MainEventTitle = styled.h2`
   color: #003366;

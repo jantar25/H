@@ -1,14 +1,19 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {
   EventsContent,
   EventsTrail,
   EventWrapper,
   MainEventCard,
+  MainImageContainer,
   MainEventImg,
+  MainDescriptionContainer,
   MainEventTitle,
   MainEventDescription,
   EventCards,
   EventCard,
+  ImageContainer,
   EventsImg,
   EventsTitle,
   EventsDescription,
@@ -18,49 +23,63 @@ import Event1 from "../../images/Event1.JPG";
 import Event3 from "../../images/Event3.JPG";
 
 const Events = () => {
+  AOS.init()
+
   return (
     <EventsContent>
       <h1>Nos Evénements</h1>
       <EventsTrail>
         <EventWrapper>
-          <MainEventCard>
-            <MainEventImg src={Event1} alt={Event1} />
-            <MainEventTitle>WAUMBA Festival</MainEventTitle>
-            <MainEventDescription>
-              We labour the land whith natural means,no chemical product in our
-              vegetable,We labour the land whith natural means,no chemical product in our
-              vegetable,We labour the land whith natural means,no chemical product in our
-              vegetable
-            </MainEventDescription>
-            <EventBtn>En savoir plus... </EventBtn>
+          <MainEventCard data-aos="zoom-in-right" >
+            <MainImageContainer>
+              <MainEventImg src={Event1} alt={Event1} />
+            </MainImageContainer>
+            <MainDescriptionContainer>
+              <MainEventTitle>WAUMBA Festival</MainEventTitle>
+              <MainEventDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable,We labour the land whith natural means,no chemical product in our
+                vegetable,We labour the land whith natural means,no chemical product in our
+                vegetable
+              </MainEventDescription>
+              <EventBtn>En savoir plus... </EventBtn>
+            </MainDescriptionContainer>
           </MainEventCard>
           <EventCards>
-            <EventCard>
-            <EventsImg src={Event3} alt={Event3} />
+            <EventCard data-aos="fade-down-left" data-aos-duration="500">
+            <ImageContainer>
+              <EventsImg src={Event3} alt={Event3} />
+            </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
               We labour the land whith natural means,no chemical product in our
               vegetable
             </EventsDescription>
             </EventCard>
-            <EventCard>
-            <EventsImg src={Event3} alt={Event3} />
+            <EventCard data-aos="fade-down-left" data-aos-duration="600">
+            <ImageContainer>
+              <EventsImg src={Event3} alt={Event3} />
+            </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
               We labour the land whith natural means,no chemical product in our
               vegetable
             </EventsDescription>
             </EventCard>
-            <EventCard>
-            <EventsImg src={Event3} alt={Event3} />
+            <EventCard data-aos="fade-down-left" data-aos-duration="700">
+            <ImageContainer>
+              <EventsImg src={Event3} alt={Event3} />
+            </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
               We labour the land whith natural means,no chemical product in our
               vegetable
             </EventsDescription>
             </EventCard>
-            <EventCard>
-            <EventsImg src={Event3} alt={Event3} />
+            <EventCard data-aos="fade-down-left" data-aos-duration="800">
+            <ImageContainer>
+              <EventsImg src={Event3} alt={Event3} />
+            </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
               We labour the land whith natural means,no chemical product in our
