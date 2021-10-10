@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const FooterContainer = styled.section`
   background-color: #131313;
   padding: 5rem 0;
@@ -100,6 +101,7 @@ export const SocialMediaIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+  
 
   &hover {
     color: #dd198b;
@@ -108,7 +110,6 @@ export const SocialMediaIcons = styled.div`
   }
 `;
 
-export const SocialMediaLinks = styled.div`
-  color: #7e094d;
-  font-size: 30px;
+export const SocialMediaLinks = styled.a`
+  padding:3px;
 `;

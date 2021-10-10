@@ -52,8 +52,8 @@ const Footer = () => {
           </FooterItems>
           <FooterItems>
             <FooterItemsTitle>Social Media</FooterItemsTitle>
-            <FooterItem href="#Sign-up">Facebook</FooterItem>
-            <FooterItem href="#Sign-up">Instagram</FooterItem>
+            <FooterItem href="https://www.facebook.com/hortensia.org">Facebook</FooterItem>
+            <FooterItem href="https://www.linkedin.com/company/hortensia-organisation">LinkedIn</FooterItem>
             <FooterItem href="#Sign-up">Twitter</FooterItem>
             <FooterItem href="#Sign-up">Youtube</FooterItem>
           </FooterItems>
@@ -66,17 +66,17 @@ const Footer = () => {
           </FooterLogo>
           <FooterRight>© HORTENSIA 2021,all right reserved</FooterRight>
           <SocialMediaIcons>
-            <SocialMediaLinks href="/">
+            <SocialMediaLinks href="https://www.facebook.com/hortensia.org">
               <SocialIcon network="facebook" />
-            </SocialMediaLinks>
-            <SocialMediaLinks href="/">
-              <SocialIcon network="instagram" />
             </SocialMediaLinks>
             <SocialMediaLinks href="/">
               <SocialIcon network="youtube" />
             </SocialMediaLinks>
             <SocialMediaLinks href="/">
               <SocialIcon network="twitter" />
+            </SocialMediaLinks>
+            <SocialMediaLinks href="https://www.linkedin.com/company/hortensia-organisation">
+              <SocialIcon network="linkedin" />
             </SocialMediaLinks>
           </SocialMediaIcons>
         </SocialMediaWrap>

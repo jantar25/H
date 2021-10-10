@@ -4,6 +4,7 @@ import About from "../Components/About";
 import Events from "../Components/Events";
 import Activity from "../Components/Activity";
 import Programs from "../Components/Programs";
+import PublishedBooks from "../Components/BooksEdition/PublishedBooks";
 
 
 import { SlideData } from "../Components/slider/sliderData";
@@ -17,6 +18,7 @@ const Home = () => {
       <Events />
       <Activity />
       <Programs />
+      <PublishedBooks />
     </div>
     </>
   );
