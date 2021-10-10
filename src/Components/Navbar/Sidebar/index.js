@@ -18,19 +18,19 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="À propos" onClick={toggle}>
+          <SidebarLink to="/Apropos" onClick={toggle}>
             Àpropos
           </SidebarLink>
-          <SidebarLink to="Programmes" onClick={toggle}>
+          <SidebarLink to="/Programme"  onClick={toggle}>
             Programmes
           </SidebarLink>
-          <SidebarLink to="Evénement" onClick={toggle}>
+          <SidebarLink to="/Evenement" onClick={toggle}>
             Evénement
           </SidebarLink>
-          <SidebarLink to="Maison d'Editions" onClick={toggle}>
+          <SidebarLink to="/Edition" onClick={toggle}>
             Maison d'Editions
           </SidebarLink>
-          <SidebarLink to="Contact" onClick={toggle}>
+          <SidebarLink to="/Contact" onClick={toggle}>
             Contacts
           </SidebarLink>
         </SidebarMenu>

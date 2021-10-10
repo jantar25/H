@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import logo1 from "../../images/logoH.png";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavContainer,
@@ -15,11 +16,16 @@ import {
 } from "./Styles";
 
 const navBar = ({ toggle }) => {
+
+const toggleHome = ()=>{
+  scroll.scrollToTop();
+}
+
   return (
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <Logo1 src={logo1} alt="Logo1" />
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -27,19 +33,19 @@ const navBar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/Apropos">Àpropos</NavLinks>
+              <NavLinks to="/Apropos" activeClassName="active">Àpropos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Evenement">Evénement</NavLinks>
+              <NavLinks to="/Evenement" activeClassName="active">Evénement</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Programme">Programmes</NavLinks>
+              <NavLinks to="/Programme" activeClassName="active">Programmes</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Edition">Maison d'Editions</NavLinks>
+              <NavLinks to="/Edition" activeClassName="active">Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Contact">Contacts</NavLinks>
+              <NavLinks to="/Contact" activeClassName="active">Contacts</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

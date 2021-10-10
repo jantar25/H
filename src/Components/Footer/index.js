@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import { SocialIcon } from "react-social-icons";
 import {
   FooterContainer,
@@ -18,6 +19,10 @@ import {
 import FooterImage from "../../images/logoH2.png";
 
 const Footer = () => {
+  const toggleHome = ()=>{
+    scroll.scrollToTop();
+  }
+
   return (
     <FooterContainer>
       <FooterLinks>
@@ -56,7 +61,7 @@ const Footer = () => {
       </FooterLinks>
       <FooterSocialMedia>
         <SocialMediaWrap>
-          <FooterLogo smooth to="#Slider">
+          <FooterLogo onClick={toggleHome}>
             <FooterImg src={FooterImage} alt={FooterImage} />
           </FooterLogo>
           <FooterRight>© HORTENSIA 2021,all right reserved</FooterRight>
