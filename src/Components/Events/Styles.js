@@ -124,6 +124,8 @@ export const EventCard = styled.div`
   background: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scaleX(1.03);
   }
 `;
 

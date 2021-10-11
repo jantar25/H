@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import aboutBg from "../../images/replacementbkg.jpg";
 
 export const ProgramsContent = styled.section`
-  background-image: url(${aboutBg});
-  background-size: cover;
+  background:#fff;
   position: relative;
   overflow: hidden;
 
@@ -34,7 +32,7 @@ export const Title = styled.h1`
 position:absolute;
 bottom:50px;
 left:50px;
-font-size: 3rem;
+font-size: 4rem;
 color: #a36a00;
 margin: 30px 50px;
 z-index:2;
@@ -56,29 +54,13 @@ export const ProgramsTrail = styled.div`
   align-items: center;
   margin: 3rem;
 `;
-export const ProgramsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  position: relative;
-  overflow: hidden;
-
-  @media screen and (max-width: 1100px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (max-width: 640px) {
-    grid-template-columns: 1fr;
-  }
-`;
 
 export const ProgramsCard = styled.div`
   margin: 20px 10px 10px;
-  height: 270px;
-  width: 400px;
+  height: 500px;
+  width: 90%;
   border: 5px;
   margin-top: 20px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,31 +70,58 @@ export const ProgramsCard = styled.div`
   transition: all 0.5s ease-in-out;
 
   &:hover {
-    transform: scale(1.03);
-    margin: 0 10px;
+    transform: scaleX(1.005);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 `;
 
+export const ProgramsCard2 = styled.div`
+  margin: 20px 10px 10px;
+  height: 600px;
+  width: 90%;
+  border: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #FAF5EF;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    transform: scaleX(1.005);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+`;
+
+
 export const ProgramsImg = styled.img`
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+position:absolute;
+top:0;
+width: 100%;
+height: 50%;
+object-fit: cover;
 `;
 
 export const ProgramsTitle = styled.h2`
-  color: #003366;
+  position:absolute;
+  top:40%;
+  width: 50%;
+  color: #fff;
   padding: 0 10px;
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: bold;
-  width: 90%;
-  border-bottom: 2px solid #a36a00;
+  text-shadow: 5px 5px 10px #000000;
 `;
 
 export const ProgramsDescription = styled.p`
+  position:absolute;
+  top:50%;
+  width: 90%;
+  height: 50%;
+  text-align:center;
   padding: 10px;
   font-size: 15px;
-  color: #000;
+  color: #003366;
 `;

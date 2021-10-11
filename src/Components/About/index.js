@@ -49,9 +49,9 @@ const About = () => {
                 <Title>HORTENSIA Organisation</Title> est une structure
                 Artistique et humanitaire dont la Mission est de Communiquer
                 pour pacifier en apportant a chacun et a tous la vraie paix et
-                le vrai amour du coeur. Ayant pour vision d'un present et un
+                le vrai amour du coeur. <br/>Ayant pour vision d'un present et un
                 avenir ou les relations des jeunes des differentes cultures sont
-                rendue plus humaines et plus proches. Oeuvrant dans
+                rendue plus humaines et plus proches. <br/><br/>Oeuvrant dans
                 l'art,culture et Education;Paix et Engagement;Entrepreneuriat
                 social.
               </Description>
