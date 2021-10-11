@@ -1,9 +1,12 @@
 import React from 'react'
+import EventsHeader from '../Components/Headers/EventsHeader'
+import Events from '../Components/Events'
 
 const Evenement = () => {
     return (
         <div>
-            <h1>EVENEMENTS</h1>
+            <EventsHeader />
+            <Events />
         </div>
     )
 }

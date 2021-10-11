@@ -21,6 +21,10 @@ const toggleHome = ()=>{
   scroll.scrollToTop();
 }
 
+const toggleFooter = ()=>{
+  scroll.scrollToBottom();
+}
+
   return (
     <>
       <Nav>
@@ -45,7 +49,7 @@ const toggleHome = ()=>{
               <NavLinks to="/Edition" activeClassName="active">Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Contact" activeClassName="active">Contacts</NavLinks>
+              <NavLinks to="#footer" onClick={toggleFooter}>Contacts</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

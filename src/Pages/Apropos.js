@@ -1,9 +1,12 @@
 import React from 'react'
+import Apropo from '../Components/About'
+import AboutHeader from '../Components/Headers/AboutHeader'
 
 const Apropos = () => {
     return (
         <div>
-            <h1>Apropos</h1>
+            <AboutHeader />
+            <Apropo />
         </div>
     )
 }

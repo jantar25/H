@@ -8,7 +8,6 @@ import Apropos from './Pages/Apropos'
 import Evenement from './Pages/Evenement'
 import Programme from './Pages/Programme'
 import Edition from './Pages/Edition'
-import Contact from './Pages/Contacts'
 import SignIn from './Pages/SignIn'
 import Footer from "./Components/Footer";
 
@@ -28,7 +27,6 @@ function App() {
         <Route path='/Evenement' exact component={Evenement} />
         <Route path='/Programme' exact component={Programme} />
         <Route path='/Edition' exact component={Edition} />
-        <Route path='/Contact' exact component={Contact} />
         <Route path='/SignIn' exact component={SignIn} />
       </Switch>
       <Footer />

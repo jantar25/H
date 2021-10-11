@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   SiderbarContainer,
   Icon,
@@ -11,6 +12,9 @@ import {
 } from "./Styles";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const toggleFooter = ()=>{
+    scroll.scrollToBottom();
+  }
   return (
     <SiderbarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -30,7 +34,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/Edition" onClick={toggle}>
             Maison d'Editions
           </SidebarLink>
-          <SidebarLink to="/Contact" onClick={toggle}>
+          <SidebarLink to="/" onClick={toggleFooter}>
             Contacts
           </SidebarLink>
         </SidebarMenu>

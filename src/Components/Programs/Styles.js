@@ -107,7 +107,6 @@ object-fit: cover;
 export const ProgramsTitle = styled.h2`
   position:absolute;
   top:40%;
-  width: 50%;
   color: #fff;
   padding: 0 10px;
   font-size: 2rem;
@@ -118,10 +117,10 @@ export const ProgramsTitle = styled.h2`
 export const ProgramsDescription = styled.p`
   position:absolute;
   top:50%;
-  width: 90%;
   height: 50%;
   text-align:center;
-  padding: 10px;
+  padding: 20px;
   font-size: 15px;
   color: #003366;
+  overflow: hidden;
 `;
