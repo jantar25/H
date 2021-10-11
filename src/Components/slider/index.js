@@ -1,4 +1,6 @@
 import React,{useEffect,useState,useRef} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {SliderSection,SliderWrapper,HeroSlide,HeroSlider,HeroImage,HeroContent,SliderButton,PrevArrow,NextArrow,SliderButtonPrev,SliderButtonNext} from './Styles'
 
 const Slider = ({slides}) => {
@@ -8,7 +10,7 @@ const Slider = ({slides}) => {
     useEffect(()=>{
         const nextSlide=()=>{
         setCurrent(current=== length-1? 0 : current+1)};
-        timeout.current = setTimeout(nextSlide,5000);
+        timeout.current = setTimeout(nextSlide,10000);
         return function(){
             if(timeout.current){
                 clearTimeout(timeout.current);
@@ -32,6 +34,8 @@ const Slider = ({slides}) => {
     if(!Array.isArray(slides) || slides.length<=0){
         return null
     }
+
+    AOS.init({duration:2000});
     return (
         <SliderSection id='Slider'>
             <SliderWrapper>
@@ -44,7 +48,7 @@ const Slider = ({slides}) => {
                                  <HeroContent>
                                      <h3>{slide.title}</h3>
                                      <h2>{slide.jingle}</h2>
-                                     <h1>{slide.departement}</h1>
+                                     <h1 data-aos="fade-right">{slide.departement}</h1>
                                      <p>{slide.comment}</p>
                                  </HeroContent>
                              </HeroSlider>

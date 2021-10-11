@@ -2,28 +2,59 @@ import styled from "styled-components";
 import aboutBg from "../../images/replacementbkg.jpg";
 
 export const ProgramsContent = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
   background-image: url(${aboutBg});
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 
-  h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    margin: 30px 50px;
-    width: 80%;
-    border-bottom: 2px solid #a36a00;
-  }
 `;
+
+export const Header = styled.div`
+height: 60vh;
+max-heigth: 1100px;
+position: relative;
+overflow: hidden;
+&::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 50vh;
+  bottom: 0vh;
+  left: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+`
+export const Title = styled.h1`
+position:absolute;
+bottom:50px;
+left:50px;
+font-size: 3rem;
+color: #a36a00;
+margin: 30px 50px;
+z-index:2;
+`
+
+export const HeaderImg = styled.img`
+position:absolute;
+top:0;
+left:0;
+object-fit:cover;
+width:100%;
+z-index:1;
+`
+
 export const ProgramsTrail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3rem;
 `;
 export const ProgramsWrapper = styled.div`
   display: grid;

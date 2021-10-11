@@ -1,5 +1,8 @@
 import React from "react";
 import {
+  Header,
+  HeaderImg,
+  Title,
   ProgramsContent,
   ProgramsTrail,
   ProgramsWrapper,
@@ -15,7 +18,10 @@ import Event3 from "../../images/Event3.JPG";
 const Programs = () => {
   return (
     <ProgramsContent>
-      <h1>Nos Programmes</h1>
+      <Header>
+        <HeaderImg src={Event1} alt={Event1} />
+        <Title>Nos Programmes</Title>
+      </Header>
       <ProgramsTrail>
         <ProgramsWrapper>
           <ProgramsCard>

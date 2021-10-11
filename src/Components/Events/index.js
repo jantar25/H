@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import {
   EventsContent,
   EventsTrail,
@@ -15,6 +13,7 @@ import {
   EventCard,
   ImageContainer,
   EventsImg,
+  DescriptContainer,
   EventsTitle,
   EventsDescription,
   EventBtn,
@@ -26,14 +25,12 @@ import Event4 from "../../images/Event4.JPG";
 import Event5 from "../../images/Event5.JPG";
 
 const Events = () => {
-  AOS.init()
-
   return (
     <EventsContent>
       <h1>Nos Evénements</h1>
       <EventsTrail>
         <EventWrapper>
-          <MainEventCard data-aos="zoom-in-right" >
+          <MainEventCard>
             <MainImageContainer>
               <MainEventImg src={Event1} alt={Event1} />
             </MainImageContainer>
@@ -49,45 +46,53 @@ const Events = () => {
             </MainDescriptionContainer>
           </MainEventCard>
           <EventCards>
-            <EventCard data-aos="fade-down-left" data-aos-duration="500">
-            <ImageContainer>
-              <EventsImg src={Event2} alt={Event2} />
-            </ImageContainer>
-            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
-            <EventsDescription>
-              We labour the land whith natural means,no chemical product in our
-              vegetable
-            </EventsDescription>
+            <EventCard>
+              <ImageContainer>
+                <EventsImg src={Event2} alt={Event2} />
+              </ImageContainer>
+              <DescriptContainer>
+                 <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+                  <EventsDescription>
+                    We labour the land whith natural means,no chemical product in our
+                    vegetable
+                  </EventsDescription>
+              </DescriptContainer>
             </EventCard>
-            <EventCard data-aos="fade-down-left" data-aos-duration="600">
+            <EventCard>
             <ImageContainer>
               <EventsImg src={Event3} alt={Event3} />
             </ImageContainer>
-            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
-            <EventsDescription>
-              We labour the land whith natural means,no chemical product in our
-              vegetable
-            </EventsDescription>
+            <DescriptContainer>
+              <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+              <EventsDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+              </EventsDescription>
+            </DescriptContainer>
             </EventCard>
-            <EventCard data-aos="fade-down-left" data-aos-duration="700">
+            <EventCard>
             <ImageContainer>
               <EventsImg src={Event4} alt={Event4} />
             </ImageContainer>
-            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
-            <EventsDescription>
-              We labour the land whith natural means,no chemical product in our
-              vegetable
-            </EventsDescription>
+            <DescriptContainer>
+              <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+              <EventsDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+              </EventsDescription>
+            </DescriptContainer>
             </EventCard>
-            <EventCard data-aos="fade-down-left" data-aos-duration="800">
+            <EventCard>
             <ImageContainer>
               <EventsImg src={Event5} alt={Event5} />
             </ImageContainer>
-            <EventsTitle>TUCHEKE Pamoja</EventsTitle>
-            <EventsDescription>
-              We labour the land whith natural means,no chemical product in our
-              vegetable
-            </EventsDescription>
+            <DescriptContainer>
+              <EventsTitle>TUCHEKE Pamoja</EventsTitle>
+              <EventsDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+              </EventsDescription>
+            </DescriptContainer>
             </EventCard>
           </EventCards>
         </EventWrapper>
