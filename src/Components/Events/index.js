@@ -20,7 +20,10 @@ import {
   EventBtn,
 } from "./Styles";
 import Event1 from "../../images/Event1.JPG";
+import Event2 from "../../images/Event2.JPG";
 import Event3 from "../../images/Event3.JPG";
+import Event4 from "../../images/Event4.JPG";
+import Event5 from "../../images/Event5.JPG";
 
 const Events = () => {
   AOS.init()
@@ -48,7 +51,7 @@ const Events = () => {
           <EventCards>
             <EventCard data-aos="fade-down-left" data-aos-duration="500">
             <ImageContainer>
-              <EventsImg src={Event3} alt={Event3} />
+              <EventsImg src={Event2} alt={Event2} />
             </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
@@ -68,7 +71,7 @@ const Events = () => {
             </EventCard>
             <EventCard data-aos="fade-down-left" data-aos-duration="700">
             <ImageContainer>
-              <EventsImg src={Event3} alt={Event3} />
+              <EventsImg src={Event4} alt={Event4} />
             </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>
@@ -78,7 +81,7 @@ const Events = () => {
             </EventCard>
             <EventCard data-aos="fade-down-left" data-aos-duration="800">
             <ImageContainer>
-              <EventsImg src={Event3} alt={Event3} />
+              <EventsImg src={Event5} alt={Event5} />
             </ImageContainer>
             <EventsTitle>TUCHEKE Pamoja</EventsTitle>
             <EventsDescription>

@@ -1,8 +1,13 @@
 import React from 'react'
+import Book1 from '../../images/Nostalgie.jpg'
+import Book2 from '../../images/destin.jpg'
+import Book3 from '../../images/cicatrices.jpg'
 import {
     BooksContent,
     BooksTrail,
-    BooksWrapper} from "./Styles";
+    BooksWrapper,
+    BookCard,BookImg,
+    BookDescription,BookBtn} from "./Styles";
 
 const PublishedBooks = () => {
     return (
@@ -10,7 +15,30 @@ const PublishedBooks = () => {
       <h1>Nos Livres Publie</h1>
       <BooksTrail>
         <BooksWrapper>
-            <h2>Books</h2>
+            <BookCard>
+                <BookImg src={Book1} alt={Book1} />
+                <BookDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+                </BookDescription>
+                <BookBtn>Buy</BookBtn>
+            </BookCard>
+            <BookCard>
+                <BookImg src={Book2} alt={Book2} />
+                <BookDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+                </BookDescription>
+                <BookBtn>Buy</BookBtn>
+            </BookCard>
+            <BookCard>
+                <BookImg src={Book3} alt={Book3} />
+                <BookDescription>
+                We labour the land whith natural means,no chemical product in our
+                vegetable
+                </BookDescription>
+                <BookBtn>Buy</BookBtn>
+            </BookCard>
         </BooksWrapper>
     </BooksTrail>
 </BooksContent>

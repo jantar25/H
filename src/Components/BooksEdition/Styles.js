@@ -22,7 +22,7 @@ export const BooksTrail = styled.div`
 `;
 export const BooksWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   overflow: hidden;
   margin:20px;
@@ -36,3 +36,25 @@ export const BooksWrapper = styled.div`
     color: gray; 
   }
 `;
+
+export const BookCard = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 20px 70px;
+`
+
+export const BookImg = styled.img`
+width:250px;
+margin-bottom:10px;
+`
+
+export const BookDescription = styled.div`
+width:250px;
+margin-bottom:10px;
+`
+
+export const BookBtn = styled.button`
+width:150px;
+`

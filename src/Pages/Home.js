@@ -3,7 +3,6 @@ import Slider from "../Components/slider";
 import About from "../Components/About";
 import Events from "../Components/Events";
 import Activity from "../Components/Activity";
-import Programs from "../Components/Programs";
 import PublishedBooks from "../Components/BooksEdition/PublishedBooks";
 
 
@@ -17,7 +16,6 @@ const Home = () => {
       <About />
       <Events />
       <Activity />
-      <Programs />
       <PublishedBooks />
     </div>
     </>

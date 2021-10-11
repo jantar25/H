@@ -1,9 +1,10 @@
 import React from 'react'
+import Programs from "../Components/Programs";
 
 const Programme = () => {
     return (
         <div>
-            <h1>PROGRAMMES</h1>
+        <Programs />
         </div>
     )
 }
