@@ -2,15 +2,25 @@ import styled, { css } from "styled-components";
 import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
 export const SliderSection = styled.section`
-  height: 89vh;
+  margin-top:-70px;
+  height: 100vh;
   max-heigth: 1100px;
   position: relative;
   overflow: hidden;
 `;
 
+export const AboutSvg = styled.div`
+   {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index:20;
+  }
+`;
+
 export const SliderWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 63%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,13 +48,13 @@ export const HeroSlider = styled.div`
     position: absolute;
     z-index: 2;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     bottom: 0vh;
     left: 0;
     overflow: hidden;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 1) 100%
     );
   }
@@ -67,37 +77,37 @@ export const HeroContent = styled.div`
   max-width: 1600px;
   width: calc(100%-100px);
   left: 100px;
-  bottom: 80px;
+  bottom: 0px;
   color: #fff;
 
   h3 {
     font-size: clamp(0.6rem, 8vw, 1.2rem);
-    height: 40px;
+    height: 30px;
     font-weight: 400;
     font-family: "Ubuntu", sans-serif;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     border-bottom: 2px solid #a36a00;
   }
 
   h2 {
-    font-size: clamp(1rem, 8vw, 2rem);
+    font-size: clamp(1rem, 8vw, 1.7rem);
     font-weight: 600;
     font-family: "Lobster", cursive;
     text-align: left;
   }
 
   h1 {
-    font-size: clamp(1rem, 8vw, 5rem);
+    font-size: clamp(0.5rem, 8vw, 5rem);
     font-weight: 900;
-    font-family: "Patua One", cursive;
+    font-family: 'Public Sans';
     color: #a36a00;
     text-align: left;
-    margin-bottom: 1rem;
+
   }
 
   p {
-    font-size: clamp(0.6rem, 8vw, 1rem);
+    font-size: clamp(0.5rem, 8vw, 1rem);
     font-weight: 200;
     font-family: "Explora", cursive;
     width: 400px;
@@ -150,3 +160,4 @@ export const PrevArrow = styled(IoArrowBack)`
 export const NextArrow = styled(IoArrowForward)`
   ${arrowButtons}
 `;
+

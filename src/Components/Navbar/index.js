@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { FaBars } from "react-icons/fa";
 import logo1 from "../../images/logoH.png";
 import { animateScroll as scroll } from "react-scroll";
@@ -15,7 +15,17 @@ import {
   NavBtnLinks,
 } from "./Styles";
 
-const navBar = ({ toggle }) => {
+const NavBar = ({ toggle }) => {
+  const [navBar,setNavBar]=useState(false);
+
+  const changeBackground=()=>{
+    if(window.scrollY>=70){
+      setNavBar(true)
+    } else{
+      setNavBar(false)
+    }
+  }
+  window.addEventListener('scroll',changeBackground)
 
 const toggleHome = ()=>{
   scroll.scrollToTop();
@@ -27,7 +37,7 @@ const toggleFooter = ()=>{
 
   return (
     <>
-      <Nav>
+      <Nav className={navBar? 'active': null}>
         <NavContainer>
           <NavLogo to="/" onClick={toggleHome}>
             <Logo1 src={logo1} alt="Logo1" />
@@ -37,16 +47,16 @@ const toggleFooter = ()=>{
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/Apropos" activeClassName="active">Àpropos</NavLinks>
+              <NavLinks to="/Apropos" >Àpropos</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Evenement" activeClassName="active">Evénement</NavLinks>
+              <NavLinks to="/Evenement" >Evénement</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Programme" activeClassName="active">Programmes</NavLinks>
+              <NavLinks to="/Programme" >Programmes</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/Edition" activeClassName="active">Maison d'Editions</NavLinks>
+              <NavLinks to="/Edition" >Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="#footer" onClick={toggleFooter}>Contacts</NavLinks>
@@ -61,4 +71,4 @@ const toggleFooter = ()=>{
   );
 };
 
-export default navBar;
+export default NavBar;

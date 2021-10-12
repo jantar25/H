@@ -7,29 +7,6 @@ export const AboutContent = styled.section`
   background: #fff;
 `;
 
-export const AboutSvg = styled.div`
-   {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  svg {
-    position: relative;
-    display: flex;
-    width: calc(100% + 1.3px);
-    height: 195px;
-    transform: rotateY(180deg);
-  }
-
-  .shape-fill {
-    fill: #000000;
-  }
-`;
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
@@ -37,7 +14,6 @@ export const AboutWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 200px;
   padding: 0 24px;
   justify-content: center;
 `;

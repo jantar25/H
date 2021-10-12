@@ -10,7 +10,7 @@ export const SlideData = [
     jingle: "Amusez vous avec:",
     departement: "BUSARA",
     comment:
-      "une communaute des jeunes ecrivains pour la lutte et l'engagement lier a l'education par le puclic speaking et la culture intellectuelle ",
+      "L'education par le puclic speaking et la culture intellectuelle ",
     image: ImageOne,
     alt: "house",
   },
@@ -20,7 +20,7 @@ export const SlideData = [
     jingle: "Instruisez vous avec:",
     departement: "JELELE",
     comment:
-      "une communaute des jeunes ecrivains pour la lutte et l'engagement lier a l'education par le theatre et le cinema",
+      "L'education par le theatre et le cinema",
     image: ImageTwo,
     alt: "house",
   },
@@ -30,7 +30,7 @@ export const SlideData = [
     jingle: "Chantez avec:",
     departement: "PEACE VOX",
     comment:
-      "une communaute des jeunes ecrivains pour la lutte et l'engagement lier a l'education par la musique",
+      "L'education par la musique",
     image: ImageThree,
     alt: "house",
   },
@@ -40,7 +40,7 @@ export const SlideData = [
     jingle: "Dissinez avec:",
     departement: "CREATIVA",
     comment:
-      "une communaute des jeunes ecrivains pour la lutte et l'engagement lier a l'education par les arts plastiques",
+      "L'education par les arts plastiques",
     image: ImageFour,
     alt: "house",
   },
@@ -50,7 +50,7 @@ export const SlideData = [
     jingle: "Instruisez vous avec:",
     departement: "Bibliotheque",
     comment:
-      "une communaute des jeunes ecrivains pour la lutte et l'engagement lier a l'education par l'ecriture'",
+      "L'education par l'ecriture'",
     image: ImageFive,
     alt: "house",
   },

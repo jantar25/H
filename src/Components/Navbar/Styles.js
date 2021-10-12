@@ -3,7 +3,7 @@ import { NavLink as LinkRouter } from "react-router-dom";
 
 
 export const Nav = styled.nav`
-  background: #003366;
+  background: transparent;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -13,9 +13,15 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
+  &.active {
+    background: #003366;
+  }
+
   @media screen and (max-width: 900px) {
     transition: all 1s ease;
   }
+
+
 `;
 
 export const NavContainer = styled.div`
@@ -82,7 +88,7 @@ export const NavLinks = styled(LinkRouter)`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 5px solid #a36a00;
+    color: #a36a00;
   }
 
   &.active {
