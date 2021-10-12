@@ -5,7 +5,6 @@ export const ProgramsContent = styled.section`
   position: relative;
   overflow: hidden;
   margin-top:-70px;
-
 `;
 
 export const Header = styled.div`

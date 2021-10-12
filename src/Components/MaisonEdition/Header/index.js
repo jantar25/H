@@ -7,7 +7,7 @@ const Head = () => {
         <div>
             <Header>
                 <HeaderImg src={Event1} alt={Event1} />
-                <Title>JELELE Edition</Title>
+                <Title>JIELELE Edition</Title>
             </Header>
         </div>
     )
