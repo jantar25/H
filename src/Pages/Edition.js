@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from '../Components/MaisonEdition/Header'
 
 const Edition = () => {
     return (
         <div>
-            <h1>Maison d'Edition</h1>
+            <Header />
         </div>
     )
 }

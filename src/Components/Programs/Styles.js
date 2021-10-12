@@ -4,6 +4,7 @@ export const ProgramsContent = styled.section`
   background:#fff;
   position: relative;
   overflow: hidden;
+  margin-top:-70px;
 
 `;
 
@@ -17,17 +18,18 @@ overflow: hidden;
   position: absolute;
   z-index: 2;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   bottom: 0vh;
   left: 0;
   overflow: hidden;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.8) 100%
   );
 
 `
+
 export const Title = styled.h1`
 position:absolute;
 bottom:50px;
@@ -44,6 +46,7 @@ top:0;
 left:0;
 object-fit:cover;
 width:100%;
+height:60vh;
 z-index:1;
 `
 
