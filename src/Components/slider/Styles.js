@@ -54,7 +54,7 @@ export const HeroSlider = styled.div`
     overflow: hidden;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 1) 100%
     );
   }

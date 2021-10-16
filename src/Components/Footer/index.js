@@ -54,7 +54,7 @@ const Footer = () => {
             <FooterItemsTitle>Social Media</FooterItemsTitle>
             <FooterItem href="https://www.facebook.com/hortensia.org">Facebook</FooterItem>
             <FooterItem href="https://www.linkedin.com/company/hortensia-organisation">LinkedIn</FooterItem>
-            <FooterItem href="#Sign-up">Twitter</FooterItem>
+            <FooterItem href="https://twitter.com/HortensiaOrg">Twitter</FooterItem>
             <FooterItem href="#Sign-up">Youtube</FooterItem>
           </FooterItems>
         </FooterWrapper>
@@ -72,7 +72,7 @@ const Footer = () => {
             <SocialMediaLinks href="/">
               <SocialIcon network="youtube" />
             </SocialMediaLinks>
-            <SocialMediaLinks href="/">
+            <SocialMediaLinks href="https://twitter.com/HortensiaOrg">
               <SocialIcon network="twitter" />
             </SocialMediaLinks>
             <SocialMediaLinks href="https://www.linkedin.com/company/hortensia-organisation">
