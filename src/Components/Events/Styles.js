@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import aboutBg from "../../images/EventsBkg.png";
+
 
 export const EventsContent = styled.section`
-  background-image: url(${aboutBg});
-  background-size: cover;
+  background: #f2f3f4;
+
 
   h1 {
     font-size: 2.5rem;
@@ -22,26 +22,23 @@ export const EventsTrail = styled.div`
   overflow: hidden;
 `;
 export const EventWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   margin:20px;
 
-  @media screen and (max-width: 780px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const MainEventCard = styled.div`
-  margin-right:10px;
   height: 500px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  background: whitesmoke;
+  background: orange;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease-in-out;
 `;
@@ -49,7 +46,7 @@ export const MainEventCard = styled.div`
 
 export const MainImageContainer = styled.div`
 width: 100%;
-height: 55%;
+height: 60%;
 `
 
 
@@ -60,7 +57,9 @@ export const MainEventImg = styled.img`
 `;
 
 export const MainDescriptionContainer = styled.div`
-height: 45%;
+height: 40%;
+overflow:hidden;
+overflow-y:scroll;
 `
 
 
@@ -70,7 +69,7 @@ export const MainEventTitle = styled.h2`
   font-size: 40px;
   font-weight: bold;
   width: 90%;
-  border-bottom: 2px solid #a36a00;
+  margin-bottom:10px;
   z-index:1;
 `;
 
@@ -97,28 +96,25 @@ export const EventBtn = styled.button`
   cursor: pointer;
 `;
 
-export const EventCards = styled.div`
-margin-left:10px;
-height: 500px;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+export const EventCardswrapper = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr;
 position: relative;
-background: whitesmoke;
-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.3);
-transition: all 0.5s ease-in-out;
+
+
+@media screen and (max-width: 780px) {
+  grid-template-columns: 1fr;
+}
   }
 `;
 
 export const EventCard = styled.div`
   margin: 10px;
-  height: 100px;
-  width: 95%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-row: 100%;
-  align-items: center;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   background: #fff;
@@ -138,7 +134,10 @@ padding:10px;
 `
 
 export const ImageContainer = styled.div`
-height: 100px;
+position:absolute;
+top:0;
+height: 200px;
+width:100%;
 `
 
 export const EventsImg = styled.img`
@@ -150,16 +149,19 @@ height: 100%;
 
 
 export const EventsTitle = styled.h2`
-  width: 50%;
+  position:absolute;
+  top:70%;
   color: #003366;
   font-size: 15px;
   font-weight: bold;
-  border-bottom: 2px solid #a36a00;
+  margin-bottom:10px;
 `;
 
 
 
 export const EventsDescription = styled.p`
+  position:absolute;
+  top:80%;
   font-size: 15px;
   color: #000;
 `;

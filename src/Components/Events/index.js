@@ -9,7 +9,7 @@ import {
   MainDescriptionContainer,
   MainEventTitle,
   MainEventDescription,
-  EventCards,
+  EventCardswrapper,
   EventCard,
   ImageContainer,
   EventsImg,
@@ -27,7 +27,7 @@ import Event5 from "../../images/Event5.JPG";
 const Events = () => {
   return (
     <EventsContent>
-      <h1>Nos Evénements</h1>
+      <h1>Evénements</h1>
       <EventsTrail>
         <EventWrapper>
           <MainEventCard>
@@ -35,17 +35,18 @@ const Events = () => {
               <MainEventImg src={Event1} alt={Event1} />
             </MainImageContainer>
             <MainDescriptionContainer>
-              <MainEventTitle>WAUMBA Festival</MainEventTitle>
+              <MainEventTitle>Banquet d’Affaires de Tchegera</MainEventTitle>
               <MainEventDescription>
-                We labour the land whith natural means,no chemical product in our
-                vegetable,We labour the land whith natural means,no chemical product in our
-                vegetable,We labour the land whith natural means,no chemical product in our
-                vegetable
+              Le Banquet d’Affaire de Tchegera est un cadre de découverte touristique, relationnelle et de partage d’expériences intergénérationnel pour les affaires dans les Grands-Lacs africains.
+Étymologiquement, « Tchegera », issu de « Kuyegera » en langue Havu du Sud-Kivu, qui veut dire « rapprocher/se rapprocher »… l’île Tchegera doit son nom à sa position géographique face à la royauté de Bushi, au Sud-Kivu et de Bahunde, au Nord-Kivu, séparée par le lac Kivu. Par extension, Tchegera signifie : « proche du roi », car l’île était sous la propriété du roi.
+L’île de Tchegera, est une merveilleuse île au nord du lac Kivu ravissant le souffle par sa beauté et par une très belle vue qu’elle offre sur la ville de Goma, le lac Kivu et tout au nord la chaine des montagnes de feu du Virunga. C’est un endroit idéal pour se détendre et respirer un air frais du lac Kivu, loin de la saturation des grandes agglomérations ; et surtout se créer des nouvelles relations d’affaires en passant des moments précieux de partage.
+Ainsi, de part son attraction, son histoire et sa légende, « Tchegera » est pour nous une expression, un cadre d’honneur et de grandeur, invitant ses sujets à la croissance et à l’élévation : « proche du Roi ». 
+
               </MainEventDescription>
               <EventBtn>En savoir plus... </EventBtn>
             </MainDescriptionContainer>
           </MainEventCard>
-          <EventCards>
+          <EventCardswrapper>
             <EventCard>
               <ImageContainer>
                 <EventsImg src={Event2} alt={Event2} />
@@ -94,7 +95,7 @@ const Events = () => {
               </EventsDescription>
             </DescriptContainer>
             </EventCard>
-          </EventCards>
+          </EventCardswrapper>
         </EventWrapper>
       </EventsTrail>
     </EventsContent>

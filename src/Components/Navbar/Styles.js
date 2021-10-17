@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   font_zise: 1.5rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 999;
 
   &.active {
     background: #003366;
