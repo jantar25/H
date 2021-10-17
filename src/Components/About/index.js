@@ -32,7 +32,7 @@ const About = () => {
               <Question>Qu'est-ce-que Hortensia?</Question>
               <Heading>Avec Peace In Love comme slogan</Heading>
               <Description>
-                <Title>HORTENSIA Organisation</Title> est une structure
+                <Title>HORTENSIA Organisation</Title> Est une structure
                 Artistique et humanitaire dont la Mission est de Communiquer
                 pour pacifier en apportant a chacun et a tous la vraie paix et
                 le vrai amour du coeur. <br/>Ayant pour vision d'un present et un

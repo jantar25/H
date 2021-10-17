@@ -11,8 +11,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLinks,
+  NavContact,
 } from "./Styles";
 
 const NavBar = ({ toggle }) => {
@@ -59,12 +58,9 @@ const toggleFooter = ()=>{
               <NavLinks to="/Edition" >Maison d'Editions</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="#footer" onClick={toggleFooter}>Contacts</NavLinks>
+              <NavContact to="#footer" onClick={toggleFooter}>Contacts</NavContact>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLinks to="/SignIn">S'abonner</NavBtnLinks>
-          </NavBtn>
         </NavContainer>
       </Nav>
     </>

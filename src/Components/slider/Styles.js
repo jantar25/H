@@ -3,24 +3,40 @@ import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
 export const SliderSection = styled.section`
   margin-top:-70px;
-  height: 100vh;
-  max-heigth: 1100px;
+  height: 120vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 800px) {
+    height:85vh;
+  }
+
+  @media screen and (max-width: 500px) {
+    height:75vh;
+  }
 `;
 
 export const AboutSvg = styled.div`
-   {
+    height:40vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     z-index:20;
+
+    @media screen and (max-width: 800px) {
+      height:25vh;
+    }
+
+  @media screen and (max-width: 500px) {
+    height:15vh;
   }
 `;
 
 export const SliderWrapper = styled.div`
+  height:80vh;
   width: 100%;
-  height: 63%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +64,7 @@ export const HeroSlider = styled.div`
     position: absolute;
     z-index: 2;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     bottom: 0vh;
     left: 0;
     overflow: hidden;
@@ -64,8 +80,8 @@ export const HeroImage = styled.img`
 position:absolute;
 top:0;
 left:0;
-width:100vw;
-height:100vh;
+width:100%;
+height:100%;
 object-fit:cover;
 }
 `;
@@ -81,7 +97,7 @@ export const HeroContent = styled.div`
   color: #fff;
 
   h3 {
-    font-size: clamp(0.6rem, 8vw, 1.2rem);
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
     height: 30px;
     font-weight: 400;
     font-family: "Ubuntu", sans-serif;
@@ -91,14 +107,14 @@ export const HeroContent = styled.div`
   }
 
   h2 {
-    font-size: clamp(1rem, 8vw, 1.7rem);
+    font-size: clamp(0.8rem, 4vw, 2rem);
     font-weight: 600;
     font-family: "Lobster", cursive;
     text-align: left;
   }
 
   h1 {
-    font-size: clamp(0.5rem, 8vw, 5rem);
+    font-size: clamp(0.5rem, 10vw, 5rem);
     font-weight: 900;
     font-family: 'Public Sans';
     color: #a36a00;

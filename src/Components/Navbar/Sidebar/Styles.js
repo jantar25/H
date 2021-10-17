@@ -61,29 +61,4 @@ export const SidebarLink = styled(LinkRouter)`
     color: #ffa500;
   }
 `;
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 
-export const SidebarRoute = styled(LinkRouter)`
-  text-align: center;
-  border-radius: 50px;
-  background: #a36a00;
-  white-space: nowrap;
-  padding: 10px 20px;
-  color: #000;
-  width: 60%;
-  font-size: 1.3rem;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 1.5s ease-in-out;
-
-  &:hover {
-    transition: all 0.5s ease-in-out;
-    background: #ffb62e;
-    color: #f5f5f5;
-  }
-`;

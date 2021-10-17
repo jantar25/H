@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutContent = styled.section`
-  max-heigth: 1100px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -11,7 +10,6 @@ export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -33,6 +31,9 @@ export const AboutRows = styled.div`
 export const AboutColumn1 = styled.div`
   margin-bottom: 15px;
   padding: 0 16px;
+  @media screen and (max-width: 760px) {
+    margin-top: 15px;
+  }
 `;
 export const AboutColumn2 = styled.div`
   margin-bottom: 15px;
