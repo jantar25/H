@@ -12,7 +12,7 @@ import {
 const PublishedBooks = () => {
     return (
 <BooksContent>
-      <h1>Nos Livres Publie</h1>
+      <h1>Livres Publier</h1>
       <BooksTrail>
         <BooksWrapper>
             <BookCard>
@@ -21,7 +21,7 @@ const PublishedBooks = () => {
                 We labour the land whith natural means,no chemical product in our
                 vegetable
                 </BookDescription>
-                <BookBtn>Buy</BookBtn>
+                <BookBtn>Acheter</BookBtn>
             </BookCard>
             <BookCard>
                 <BookImg src={Book2} alt={Book2} />
@@ -29,7 +29,7 @@ const PublishedBooks = () => {
                 We labour the land whith natural means,no chemical product in our
                 vegetable
                 </BookDescription>
-                <BookBtn>Buy</BookBtn>
+                <BookBtn>Acheter</BookBtn>
             </BookCard>
             <BookCard>
                 <BookImg src={Book3} alt={Book3} />
@@ -37,7 +37,7 @@ const PublishedBooks = () => {
                 We labour the land whith natural means,no chemical product in our
                 vegetable
                 </BookDescription>
-                <BookBtn>Buy</BookBtn>
+                <BookBtn>Acheter</BookBtn>
             </BookCard>
         </BooksWrapper>
     </BooksTrail>
