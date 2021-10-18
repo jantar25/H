@@ -25,11 +25,10 @@ overflow: hidden;
 `
 export const Title = styled.h1`
 position:absolute;
-bottom:50px;
-left:50px;
-font-size: 4rem;
+bottom:10%;
+left:5%;
+font-size: clamp(0.5rem, 10vw, 5rem);
 color: #a36a00;
-margin: 30px 50px;
 z-index:2;
 `
 
@@ -38,6 +37,7 @@ position:absolute;
 top:0;
 left:0;
 object-fit:cover;
+height:60vh;
 width:100%;
 z-index:1;
 `

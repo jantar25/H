@@ -1,6 +1,6 @@
 import React from 'react'
-import Apropo from '../Components/About'
 import AboutHeader from '../Components/Headers/AboutHeader'
+import Apropo from '../Components/Apropo'
 
 const Apropos = () => {
     return (

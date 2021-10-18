@@ -16,7 +16,7 @@ import {
   SocialMediaIcons,
   SocialMediaLinks,
 } from "./Styles";
-import FooterImage from "../../images/logoH2.png";
+import FooterImage from "../../../images/logoH2.png";
 
 const Footer = () => {
   const toggleHome = ()=>{

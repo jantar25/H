@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { FaBars } from "react-icons/fa";
-import logo1 from "../../images/logoH.png";
+import logo1 from "../../../images/logoH.png";
 import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,

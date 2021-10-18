@@ -1,7 +1,7 @@
 import React from 'react'
-import Book1 from '../../images/Nostalgie.jpg'
-import Book2 from '../../images/destin.jpg'
-import Book3 from '../../images/cicatrices.jpg'
+import Book1 from '../../../images/Nostalgie.jpg'
+import Book2 from '../../../images/destin.jpg'
+import Book3 from '../../../images/cicatrices.jpg'
 import {
     BooksContent,
     BooksTrail,

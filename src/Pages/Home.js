@@ -1,12 +1,12 @@
 import React from "react";
-import Slider from "../Components/slider";
-import About from "../Components/About";
-import Events from "../Components/Events";
-import Activity from "../Components/Activity";
-import PublishedBooks from "../Components/BooksEdition/PublishedBooks";
+import Slider from "../Components/Home/slider";
+import About from "../Components/Home/About";
+import Events from "../Components/Home/Events";
+import Activity from "../Components/Home/Activity";
+import PublishedBooks from "../Components/Home/BooksEdition/PublishedBooks";
 
 
-import { SlideData } from "../Components/slider/sliderData";
+import { SlideData } from "../Components/Home/slider/sliderData";
 
 const Home = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect } from "react";
-import AboutImage from "../../images/aboutImg.png";
+import AboutImage from "../../../images/aboutImg.png";
 import {
   AboutContent,
   AboutWrapper,
