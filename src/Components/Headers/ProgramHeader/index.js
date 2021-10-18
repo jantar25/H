@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {
   Header,
   HeaderImg,
@@ -8,10 +10,11 @@ import {
 import ProgramImg from "../../../images/EventHeader.JPG";
 
 const EventsHeader = () => {
+  AOS.init({duration:2000});
   return (
     <Header>
     <HeaderImg src={ProgramImg} alt={ProgramImg} />
-    <Title>Nos Programmes</Title>
+    <Title data-aos="fade-right">Nos Programmes</Title>
   </Header>
       );
 };

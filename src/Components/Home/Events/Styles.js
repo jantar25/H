@@ -75,7 +75,7 @@ export const MainDescriptionContainer = styled.div`
 height: 40%;
 overflow:hidden;
 overflow-y:scroll;
-margin-bottom:20px;
+margin-bottom:10px;
 `
 
 

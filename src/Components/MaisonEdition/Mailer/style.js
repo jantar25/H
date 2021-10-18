@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 
 export const MailerCard = styled.section`
+display:flex;
+justify-content:center;
+align-items:center;
 background:#003366;
-margin:2rem;
 padding:2rem;
-color:#fff;
+margin:2rem;
+width:70%;
+color:#000;
+border-radius:5px;
 `
 export const MailerWrap = styled.div`
 display:flex;
@@ -27,50 +32,52 @@ justify-content: center;
 export const Part1 = styled.div`
 display:flex;
 flex-direction:column;
-margin:2rem;
-padding:2rem;
+margin:20px;
+padding:10px;
 `
 
 export const Part2 = styled.div`
 display:flex;
 flex-direction:column;
-margin:2rem;
-padding:2rem;
+margin:20px;
+padding:10px;
+
+input{
+  width:100%;
+  padding:5px 30px;
+  font-size:20px;
+  color:white;
+  background:#006400;
+  outlined:0;
+  border:0;
+  border-radius:10px;
+  &:hover {
+    background:#228B22;
+  }
+}
 `
 export const MailerName = styled.div`
 display:flex;
+flex-direction:column;
 justify-content:center;
-align-items:center;
-margin:20px;
-
- label{
-margin-right:10px;
- }
+margin-bottom:10px;
 `
 export const MailerEmail = styled.div`
 display:flex;
+flex-direction:column;
 justify-content:center;
-align-items:center;
-margin:20px;
-
- label{
-margin-right:10px;
- }`
+margin-bottom:10px;
+`
 export const MailerAttache = styled.div`
 display:flex;
+flex-direction:column;
 justify-content:center;
-align-items:center;
-margin:20px;
-
- label{
-margin-right:10px;
- }`
+margin-bottom:10px;
+`
 export const MailerMessage = styled.div`
 display:flex;
+flex-direction:column;
 justify-content:center;
-align-items:center;
-margin:20px;
+margin-bottom:10px;
 
- label{
-margin-right:10px;
- }`
+`

@@ -23,9 +23,9 @@ const index = () => {
                     <EditionCard>
                         <Title>Eleza</Title>
                         <Description>
-                        « Eleza » vient du swahili et signifie « raconter ») 
+                        <b>« Eleza »</b> vient du swahili et signifie « raconter » 
                         pour la publication des contes, des témoignages, des biographies,
-                         des récits de voyage et de la poésie 
+                         des récits de voyage et de la poésie. 
                         </Description>
                     </EditionCard>
                     <EditionCard>

@@ -37,7 +37,7 @@ position:absolute;
 top:0;
 left:0;
 object-fit:cover;
-height:60vh;
 width:100%;
+height:60vh;
 z-index:1;
 `

@@ -15,11 +15,11 @@ const index = () => {
     return (
         <MailerCard>
             <MailerWrap>
-                <h1>submit form</h1>
+                <h1>Forme de depot</h1>
                 <MailerForm onSubmit={sendEmail}>
                     <Part1>
                         <MailerName>
-                            <label>Name</label>
+                            <label>Nom</label>
                             <input type='text' name='name' />
                         </MailerName>
                         <MailerEmail>
@@ -27,8 +27,8 @@ const index = () => {
                             <input type='userEmail' name='email' />
                         </MailerEmail>
                         <MailerAttache>
-                            <label>Attache file</label>
                             <input type="file" id="myFile" name="filename" />
+                            <label>Attacher un fichier PDF</label>
                         </MailerAttache>
                     </Part1>
                     <Part2>
@@ -37,7 +37,7 @@ const index = () => {
                             <textarea name='message' rows='4' />
                         </MailerMessage>
                         
-                        <input type='submit' value='send' />
+                        <input type='submit' value='Envoyer' />
                     </Part2>
                 </MailerForm>
             </MailerWrap>
