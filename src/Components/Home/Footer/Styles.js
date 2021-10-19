@@ -50,11 +50,11 @@ export const FooterItemsTitle = styled.h1`
 export const FooterItem = styled.a`
   text-decoration: none;
   margin: 10px;
-  color: #f079be;
+  color: #a36a00;
   transition: all 0.5s ease;
 
-  &hover {
-    color: #fdc0e4;
+  &:hover {
+    color: whitesmoke;
     transition: all 0.5s ease-out;
   }
 `;

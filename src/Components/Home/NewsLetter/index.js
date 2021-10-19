@@ -10,7 +10,7 @@ const index = () => {
                     nos ateliers et plus encore :
                 </h1>
                 <EmailContain>
-                    <input type='userEmail' name='email' label='Email' />
+                    <input type='userEmail' name='email' placeholder="you@email.com" />
                     <Button>S'abonner</Button>
                 </EmailContain>
             </NewsContainerCard>

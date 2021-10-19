@@ -21,11 +21,11 @@ const index = () => {
                         <Part1>
                             <MailerName>
                                 <label>Nom</label>
-                                <input type='text' name='name' />
+                                <input type='text' name='name' placeholder="Nom" />
                             </MailerName>
                             <MailerEmail>
                                 <label>Email</label>
-                                <input type='userEmail' name='email' />
+                                <input type='userEmail' name='email' placeholder="Email" />
                             </MailerEmail>
                             <MailerAttache>
                                 <input type="file" id="myFile" name="filename" />
@@ -35,7 +35,7 @@ const index = () => {
                         <Part2>
                             <MailerMessage>
                                 <label>Message</label>
-                                <textarea name='message' rows='4' />
+                                <textarea name='message' rows='4' placeholder="Message" />
                             </MailerMessage>
                             
                             <input type='submit' value='Envoyer' />
