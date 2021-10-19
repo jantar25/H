@@ -66,7 +66,7 @@ height: 60%;
 
 export const MainEventImg = styled.img`
   width: 100%;
-  height: 100%;
+  height: 98%;
   object-fit: cover;
 
 `;

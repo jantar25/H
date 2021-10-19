@@ -9,9 +9,9 @@ import {
   DescriptionCntainer,
   ProgramsDescription,
 } from "./Styles";
-import Event1 from "../../images/Event1.JPG";
-import Event2 from "../../images/Event2.JPG";
-import Event3 from "../../images/Event3.JPG";
+import Hadisi from "../../images/Hadisi.JPG";
+import Interprenship from "../../images/Interprenship.JPG";
+import Pambazuko from "../../images/Pambazuko.JPG";
 
 const Programs = () => {
   return (
@@ -20,7 +20,7 @@ const Programs = () => {
           <ProgramsCard>
             <ProgramsTitle>Hadisi Njo</ProgramsTitle>
             <ProgramsImgCntainer>
-              <ProgramsImg src={Event2} alt={Event2} />
+              <ProgramsImg src={Hadisi} alt={Hadisi} />
             </ProgramsImgCntainer>
             <DescriptionCntainer>
               <ProgramsDescription>
@@ -41,7 +41,7 @@ const Programs = () => {
           <ProgramsCard>
           <ProgramsTitle>PAMBAZUKO</ProgramsTitle>
             <ProgramsImgCntainer>
-              <ProgramsImg src={Event1} alt={Event1} />
+              <ProgramsImg src={Pambazuko} alt={Pambazuko} />
             </ProgramsImgCntainer>
             <DescriptionCntainer>
               <ProgramsDescription>
@@ -71,7 +71,7 @@ const Programs = () => {
           <ProgramsCard>
             <ProgramsTitle>Entrepreneurship Program</ProgramsTitle>
             <ProgramsImgCntainer>
-                <ProgramsImg src={Event3} alt={Event3} />
+                <ProgramsImg src={Interprenship} alt={Interprenship} />
             </ProgramsImgCntainer>
             <DescriptionCntainer>
                 <ProgramsDescription>
