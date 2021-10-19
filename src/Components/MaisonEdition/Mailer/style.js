@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 
-export const MailerCard = styled.section`
+export const MailerContainer = styled.section`
 display:flex;
 justify-content:center;
 align-items:center;
-background:#003366;
-padding:2rem;
+`
+
+export const MailerCard = styled.div`
+padding:1rem;
 margin:2rem;
+background:#003366;
 width:70%;
 color:#000;
 border-radius:5px;
@@ -61,12 +64,22 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 margin-bottom:10px;
+
+input{
+  width:100%;
+  padding:5px 30px; 
+}
 `
 export const MailerEmail = styled.div`
 display:flex;
 flex-direction:column;
 justify-content:center;
 margin-bottom:10px;
+
+input{
+  width:100%;
+  padding:5px 30px; 
+}
 `
 export const MailerAttache = styled.div`
 display:flex;
@@ -80,4 +93,7 @@ flex-direction:column;
 justify-content:center;
 margin-bottom:10px;
 
+input{
+  width:100%;
+}
 `

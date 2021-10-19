@@ -1,6 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
-import {MailerCard,MailerWrap,MailerForm,Part1,Part2,MailerName,
+import {MailerContainer,MailerCard,MailerWrap,MailerForm,Part1,Part2,MailerName,
     MailerEmail,MailerAttache,MailerMessage} from './style'
 
 const index = () => {
@@ -13,35 +13,37 @@ const index = () => {
         }).catch(err=>console.log(err));
     }
     return (
-        <MailerCard>
-            <MailerWrap>
-                <h1>Forme de depot</h1>
-                <MailerForm onSubmit={sendEmail}>
-                    <Part1>
-                        <MailerName>
-                            <label>Nom</label>
-                            <input type='text' name='name' />
-                        </MailerName>
-                        <MailerEmail>
-                            <label>Email</label>
-                            <input type='userEmail' name='email' />
-                        </MailerEmail>
-                        <MailerAttache>
-                            <input type="file" id="myFile" name="filename" />
-                            <label>Attacher un fichier PDF</label>
-                        </MailerAttache>
-                    </Part1>
-                    <Part2>
-                        <MailerMessage>
-                            <label>Message</label>
-                            <textarea name='message' rows='4' />
-                        </MailerMessage>
-                        
-                        <input type='submit' value='Envoyer' />
-                    </Part2>
-                </MailerForm>
-            </MailerWrap>
-        </MailerCard>
+        <MailerContainer>
+            <MailerCard>
+                <MailerWrap>
+                    <h1>Forme de depot</h1>
+                    <MailerForm onSubmit={sendEmail}>
+                        <Part1>
+                            <MailerName>
+                                <label>Nom</label>
+                                <input type='text' name='name' />
+                            </MailerName>
+                            <MailerEmail>
+                                <label>Email</label>
+                                <input type='userEmail' name='email' />
+                            </MailerEmail>
+                            <MailerAttache>
+                                <input type="file" id="myFile" name="filename" />
+                                <label>Attacher un fichier PDF</label>
+                            </MailerAttache>
+                        </Part1>
+                        <Part2>
+                            <MailerMessage>
+                                <label>Message</label>
+                                <textarea name='message' rows='4' />
+                            </MailerMessage>
+                            
+                            <input type='submit' value='Envoyer' />
+                        </Part2>
+                    </MailerForm>
+                </MailerWrap>
+            </MailerCard>
+        </MailerContainer>
     )
 }
 
