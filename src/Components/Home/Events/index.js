@@ -18,7 +18,7 @@ import {
   EventsDescription,
 } from "./Styles";
 import Event1 from "../../../images/Tchegera.jpg";
-import Event2 from "../../../images/Event2.jpg";
+import Event2 from "../../../images/Elengi.jpg";
 import Event3 from "../../../images/Event3.JPG";
 import Event4 from "../../../images/Event4.JPG";
 import Event5 from "../../../images/Event5.JPG";
