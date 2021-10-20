@@ -64,7 +64,7 @@ const Footer = () => {
           <FooterLogo onClick={toggleHome}>
             <FooterImg src={FooterImage} alt={FooterImage} />
           </FooterLogo>
-          <FooterRight>© HORTENSIA 2021,all right reserved</FooterRight>
+          <FooterRight>©2021 HORTENSIA,all right reserved</FooterRight>
           <SocialMediaIcons>
             <SocialMediaLinks href="https://www.facebook.com/hortensia.org">
               <SocialIcon network="facebook" />

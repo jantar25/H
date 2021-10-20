@@ -7,7 +7,7 @@ import {
   Title,
 } from "./Styles";
 
-import EventImg from "../../../images/AboutHeader.JPG";
+import EventImg from "../../../images/AboutHeader.jpg";
 
 const EventsHeader = () => {
   AOS.init({duration:2000});
