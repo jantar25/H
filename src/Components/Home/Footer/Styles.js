@@ -110,6 +110,4 @@ export const SocialMediaIcons = styled.div`
   }
 `;
 
-export const SocialMediaLinks = styled.a`
-  padding:3px;
-`;
+

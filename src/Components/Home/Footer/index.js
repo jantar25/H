@@ -14,7 +14,6 @@ import {
   FooterImg,
   FooterRight,
   SocialMediaIcons,
-  SocialMediaLinks,
 } from "./Styles";
 import FooterImage from "../../../images/logoH2.png";
 
@@ -66,18 +65,10 @@ const Footer = () => {
           </FooterLogo>
           <FooterRight>©2021 HORTENSIA,all right reserved</FooterRight>
           <SocialMediaIcons>
-            <SocialMediaLinks href="https://www.facebook.com/hortensia.org">
-              <SocialIcon network="facebook" />
-            </SocialMediaLinks>
-            <SocialMediaLinks href="/">
-              <SocialIcon network="youtube" />
-            </SocialMediaLinks>
-            <SocialMediaLinks href="https://twitter.com/HortensiaOrg">
-              <SocialIcon network="twitter" />
-            </SocialMediaLinks>
-            <SocialMediaLinks href="https://www.linkedin.com/company/hortensia-organisation">
-              <SocialIcon network="linkedin" />
-            </SocialMediaLinks>
+            <SocialIcon url="https://www.facebook.com/hortensia.org" network="facebook" />
+            <SocialIcon url="/" network="youtube" />
+            <SocialIcon url="https://twitter.com/HortensiaOrg" network="twitter" />
+            <SocialIcon url="https://www.linkedin.com/company/hortensia-organisation" network="linkedin" />
           </SocialMediaIcons>
         </SocialMediaWrap>
       </FooterSocialMedia>

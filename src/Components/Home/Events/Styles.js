@@ -66,7 +66,7 @@ height: 60%;
 
 export const MainEventImg = styled.img`
   width: 100%;
-  height: 98%;
+  height: 100%;
   object-fit: cover;
 
 `;
@@ -81,7 +81,7 @@ margin-bottom:10px;
 
 export const MainEventTitle = styled.h2`
   color: #003366;
-  padding: 0 10px;
+  padding: 10px;
   font-size: clamp(1rem, 4vw, 4rem);;
   font-weight: bold;
   width: 90%;
