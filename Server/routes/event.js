@@ -51,7 +51,6 @@ router.get("/find/:id",async (req,res)=>{
 //GET ALL PRODUCTS
 router.get("/",async (req,res)=>{
     const queryNew = req.query.new;
-    const queryCategory = req.query.category;
     try{
         let events;
 

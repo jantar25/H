@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose")
+const cors = require("cors")
 const dotenv = require("dotenv")
 const EventRoute = require("./routes/event")
 
@@ -11,6 +12,7 @@ mongoose.connect(process.env.MONGODB_URL)
 .then(()=>console.log("DB Connected"))
 .catch((err)=>console.log(err))
 
+app.use(cors());
 app.use(express.json());
 app.use("/events",EventRoute)
 
