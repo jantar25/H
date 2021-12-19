@@ -32,37 +32,34 @@ h1{
 `
 
 export const EmailContain = styled.div`
-display: grid;
-grid-template-columns: 70% 30%;
-grid-row: 1fr;
+display: flex;
 align-items: center;
 justify-content: center;
 margin:2rem;
+border:2px solid #0575E6;
 
 input{
+    flex:8;
     width:100%;
     padding: 10px 15px;
-    margin:5px;
-    border-color:#0575E6;
 }
 `
 
 export const Button = styled.button`
+    flex:3;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     height: 40px;
     width: 100%;
     text-decoration: none;
     border: none;
     outline: none;
-    border-radius: 10px;
     color: #fff;
     background: #0575E6;  
     background: -webkit-linear-gradient(to right, #021B79, #0575E6); 
     background: linear-gradient(to right, #021B79, #0575E6);
     transition: all 1s ease; 
-    margin-left: 10px;
 
 `

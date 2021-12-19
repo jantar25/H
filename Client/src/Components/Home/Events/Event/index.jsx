@@ -8,23 +8,24 @@ import {Container,Image,Info,Card,ImgContainer,IconContainer,Title,Desc} from '.
 
 const Event = ({item}) => {
     return (
-        <Container>
-            {/* <Link to={`/event/find/${item._id}`} style={{textDecoration:"none"}}> */}
-                <Card>
-                    <ImgContainer>
-                        <Image src={item.img}/>
-                    </ImgContainer>
-                    <Info>
-                        <Title>{item.title}</Title>
-                        <Desc>{item.description.split(' ').splice(0, 15).join(' ')}...</Desc>    
-                    </Info>
-                    <IconContainer>
-                        <ThumbUpAltIcon style={{color :"white"}}/>
-                        <CommentIcon style={{color :"white"}} />
-                    </IconContainer>
-                </Card>
-             {/* </Link> */}
-        </Container>
+            <Container>
+                    <Card>
+                        <Link to={`/event/find/${item._id}`} style={{textDecoration:"none"}}>
+                            <ImgContainer>
+                                <Image src={item.img}/>
+                            </ImgContainer>
+                        </Link>
+                        <Info>
+                            <Title>{item.title}</Title>
+                            <Desc>{item.description.split(' ').splice(0, 15).join(' ')}...</Desc>    
+                        </Info>
+                        <IconContainer>
+                            <ThumbUpAltIcon style={{color :"white"}}/>
+                            <CommentIcon style={{color :"white"}} />
+                        </IconContainer>
+                    </Card>
+               
+            </Container>
     )
 }
 

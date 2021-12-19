@@ -1,4 +1,4 @@
-import {Container,Popular} from './Styles'
+import {Container,Popular,Head} from './Styles'
 import Event from './Event/index'
 import { useState } from 'react'
 import axios from "axios"
@@ -24,6 +24,7 @@ const PopularsItems = () => {
 
     return (
         <Container>
+            <Head>Nos Evenements</Head>
             <Popular>
             {events.slice(0,8).map((item)=>(<Event item={item} key={item._id} />))}
             </Popular>

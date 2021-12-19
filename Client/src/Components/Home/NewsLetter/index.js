@@ -1,4 +1,5 @@
 import React from 'react'
+import SendIcon from '@material-ui/icons/Send';
 import {NewsContainer,NewsContainerCard,EmailContain,Button} from './Styles'
 
 
@@ -11,7 +12,7 @@ const index = () => {
                 </h1>
                 <EmailContain>
                     <input type='userEmail' name='email' placeholder="you@email.com" />
-                    <Button>S'abonner</Button>
+                    <Button><SendIcon /></Button>
                 </EmailContain>
             </NewsContainerCard>
         </NewsContainer>

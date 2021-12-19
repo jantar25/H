@@ -4,12 +4,16 @@ import styled from "styled-components";
 export const Container = styled.div`
 flex:1;
 margin:5px;
-width:50%;
+min-width:30%;
 height:60vh;
 display:flex;
 overflow:hidden;
 &:hover{
     background:rgba(0, 0, 0, 0.5); 
+}
+
+@media screen and (max-width: 900px) {
+  min-width:100%;
 }
 `
 export const Card = styled.div`
