@@ -4,7 +4,8 @@ import {useDispatch} from 'react-redux';
 import { useEffect} from 'react';
 import { useHistory,useLocation } from 'react-router';
 import { logoutDone } from '../../Redux/apiCalls'; 
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import logo from "../../Images/logoH.png";
 import {Container,Wrapper,Logo,Right,Left,IconContainer,Image,Button} from './style';
 
 export default function Topbar() {
@@ -34,7 +35,7 @@ useEffect(()=>{
     <Container>
       <Wrapper>
         <Left>
-          <Logo>KIVUGREEN</Logo>
+          <Logo src={logo}/>
         </Left>
         <Right>
           <Link to="/users">

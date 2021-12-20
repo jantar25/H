@@ -26,7 +26,7 @@ const PopularsItems = () => {
         <Container>
             <Head>Nos Evenements</Head>
             <Popular>
-            {events.slice(0,8).map((item)=>(<Event item={item} key={item._id} />))}
+            {events.slice(0,6).map((item)=>(<Event item={item} key={item._id} />))}
             </Popular>
         </Container>
     )

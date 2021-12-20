@@ -18,16 +18,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `
 
-export const Logo = styled.span`
-font-size: 30px;
-text-decoration: none;
-background-color: #6a9113;
-background-image: linear-gradient(to top, #6a9113 0%, #cacebf 100%);
-background-size: 100%;
--webkit-background-clip: text;
--moz-background-clip: text;
--webkit-text-fill-color: transparent;
--moz-text-fill-color: transparent;
+export const Logo = styled.img`
+width: 120px;
 cursor: pointer;
 `
 

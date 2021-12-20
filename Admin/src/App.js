@@ -17,15 +17,15 @@ function App() {
 
   return (
     <Router>
-     <Switch>
-        <Topbar />
-        <Home />
-        <Route path="/users"><UserList /></Route>
-        <Route path="/user/:userId"><User /></Route>
-        <Route path="/newUser"><NewUser /></Route>
-        <Route path="/products"><ProductList /></Route>
-        <Route path="/product/:productId"><Product /></Route>
-        <Route path="/newproduct"><NewProduct /></Route>
+     <Topbar />
+        <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/users" component={UserList} />
+        <Route path="/user/:userId" exact component={User} />
+        <Route path="/newUser" exact component={NewUser} />
+        <Route path="/products" exact component={ProductList} />
+        <Route path="/product/:productId" exact component={Product} />
+        <Route path="/newproduct" exact component={NewProduct} />
       </Switch>
     </Router>
   );
