@@ -84,3 +84,31 @@ margin:10px;
 font-size:15px;
 color:white;
 `
+
+export const Wrapper = styled.div`
+display:flex;
+padding:50px;
+
+`
+export const PopImageContainer = styled.div`
+flex:1;
+`
+export const PopImage = styled.img`
+width:100%;
+height:80hv;
+object-fit:cover;
+
+`
+export const InfoContainer = styled.div`
+flex:1;
+padding:0px 50px;
+
+`
+export const PopTitle = styled.span`
+font-size:40px;
+font-weight:600;
+color:orange;
+`
+export const PopDescription = styled.p`
+margin: 20px 0px;
+`
