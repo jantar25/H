@@ -88,7 +88,10 @@ color:white;
 export const Wrapper = styled.div`
 display:flex;
 padding:50px;
-
+@media screen and (max-width: 900px) {
+  flex-direction:column;
+  padding:10px;
+}
 `
 export const PopImageContainer = styled.div`
 flex:1;
@@ -97,18 +100,30 @@ export const PopImage = styled.img`
 width:100%;
 height:80hv;
 object-fit:cover;
-
+@media screen and (max-width: 900px) {
+  height:10hv;
+}
 `
 export const InfoContainer = styled.div`
 flex:1;
 padding:0px 50px;
-
+@media screen and (max-width: 900px) {
+  padding:0px 10px;
+}
 `
 export const PopTitle = styled.span`
 font-size:40px;
 font-weight:600;
 color:orange;
+@media screen and (max-width: 900px) {
+  font-size:20px;
+}
 `
 export const PopDescription = styled.p`
 margin: 20px 0px;
+@media screen and (max-width: 900px) {
+  margin:10px;
+  font-size:12px;
+  height:80hv;
+}
 `

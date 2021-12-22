@@ -1,12 +1,10 @@
 import { useLocation } from "react-router-dom";
-import {Container,Top,TopLeft,TopRight,InfoTop,Image,Name,InfoBottom,InfoItem,InfoValue,
+import {Container,Top,TopRight,InfoTop,Image,Name,InfoBottom,InfoItem,InfoValue,
     InfoKey,Form,FormLeft,FormRight,Upload,UploadImage,Label,Bottom,ButtonUpdate,LeftInput,LeftSelect } from './style'
-import Chart from "../../components/chart/Chart"
 import { Publish } from "@material-ui/icons";
 import { useSelector } from "react-redux";
-import { useState,useEffect } from "react";
-import { useMemo } from "react";
-import {userRequest} from '../../requestMethode'
+import { useState } from "react";
+
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import app from '../../firebase'
 import {useDispatch} from 'react-redux'
@@ -84,45 +82,11 @@ export default function Product() {
     );
     }
 
-    const MONTHS = useMemo(
-        ()=>[
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-      ],[]);
 
-      useEffect(()=>{
-        const getStats = async () =>{
-          try {
-            const res = await userRequest.get("/orders/income? paid=" + productId)
-            const list = res.data.sort((a,b)=>{
-                return a._id - b._id
-            })
-            list.map((item)=>{
-              setPStats(prev=>[...prev,{name:MONTHS[item._id-1], Sales:item.total}]);
-            })
-          } catch (error) {
-            console.log(error)
-          }
-        }
-        getStats();
-      },[MONTHS,productId])
     
   return (
     <Container>
       <Top>
-          <TopLeft>
-              <Chart data={pStats} dataKey="Sales" title="Sales Performance"/>
-          </TopLeft>
           <TopRight>
               <InfoTop>
                   <Image src={product?.img} alt="" />
