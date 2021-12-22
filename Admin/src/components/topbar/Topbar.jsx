@@ -18,33 +18,35 @@ export default function Topbar() {
     history.push('/');
 }
 
-useEffect(()=>{
-  const token=JSON.parse(JSON.parse(localStorage.getItem("persist:root"))?.user).currentUser?.accessToken;
- if(token){
-     const decodedToken=decode(token);
-     const today = new Date().getTime();
-     const inToken=decodedToken.exp*1000;
-     if (inToken < today) {
-      logoutDone(dispatch);
-      history.push('/');
-     };
-   }
-},[location,history,dispatch])
+// useEffect(()=>{
+//   const token=JSON.parse(JSON.parse(localStorage.getItem("persist:root"))?.user).currentUser?.accessToken;
+//  if(token){
+//      const decodedToken=decode(token);
+//      const today = new Date().getTime();
+//      const inToken=decodedToken.exp*1000;
+//      if (inToken < today) {
+//       logoutDone(dispatch);
+//       history.push('/');
+//      };
+//    }
+// },[location,history,dispatch])
 
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo src={logo}/>
+          <Link to="/" style={{textDecoration:"none"}} >
+            <Logo src={logo}/>
+          </Link>
         </Left>
         <Right>
-          <Link to="/users">
+          <Link to="/users" style={{textDecoration:"none"}}>
             <IconContainer>Users</IconContainer>
           </Link>
-          <Link to="/products">
+          <Link to="/products" style={{textDecoration:"none"}}>
             <IconContainer>Events</IconContainer>
-          </Link>
-          <Link>
+          </Link >
+          <Link to="/products" style={{textDecoration:"none"}}>
             <IconContainer>Programs</IconContainer>
           </Link>
           <Button onClick={Logout}>LOG OUT</Button>

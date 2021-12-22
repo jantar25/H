@@ -15,10 +15,10 @@ export default function Chart({ title, data, dataKey, grid }) {
       <Title>{title}</Title>
       <ResponsiveContainer width="100%" aspect={4 / 1}>
         <LineChart data={data}>
-          <XAxis dataKey="name" stroke="#6a9113" />
+          <XAxis dataKey="name" stroke="orange" />
           <Line type="monotone" dataKey={dataKey} stroke="#cacebf" />
           <Tooltip />
-          {grid && <CartesianGrid stroke="#6a9113" strokeDasharray="5 5" />}
+          {grid && <CartesianGrid stroke="orange" strokeDasharray="5 5" />}
         </LineChart>
       </ResponsiveContainer>
     </ChartContainer>

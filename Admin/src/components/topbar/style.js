@@ -39,38 +39,25 @@ export const IconContainer = styled.div`
   margin-right: 20px;
   color: #cacebf;
   &:hover{
-    color: #6a9113;
+    color:orange;
   }
 `
 
-export const IconBadge = styled.span`
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: -8px;
-    right: -3px;
-    background-color: #6a9113;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-`
-
 export const Image = styled.img`
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    cursor: pointer;
 `
 
 export const Button = styled.button`
-padding: 10px 20px;
+padding: 7px 15px;
 border: none;
-background-color: #6a9113;
+background-color: orange;
 font-weight:600;
 border-radius:10px;
 margin:0px 10px;
 cursor:pointer;
+&:hover{
+  color: white;
+}
 `
