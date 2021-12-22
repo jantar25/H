@@ -1,6 +1,6 @@
-import { Container,Title,Table,Tr,Th,Td,Name,Date,Amount,Btn} from "./style";
+import { Container,Title,Table,Tr,Th,Td,Name,Date,Btn} from "./style";
 import { useEffect, useState } from 'react';
-import {userRequest} from '../../requestMethode'
+import {publicRequest} from '../../requestMethode'
 import {format } from 'timeago.js'
 
 export default function WidgetLg() {
@@ -13,7 +13,7 @@ export default function WidgetLg() {
     const getOrders = async ()=>{
   
       try {
-        const res = await userRequest.get("/orders");
+        const res = await publicRequest.get("/events");
         setOrders(res.data);
       } catch (error) {
         console.log(error)
@@ -22,26 +22,25 @@ export default function WidgetLg() {
     }
     getOrders();
   },[])
+  console.log(orders)
   return (
     <Container>
-      <Title>Latest transactions</Title>
+      <Title>Latest Events Created</Title>
       <Table>
         <tbody>
         <Tr>
-          <Th>Customer</Th>
+          <Th>Events</Th>
           <Th>Date</Th>
-          <Th>Amount</Th>
-          <Th>Status</Th>
+          <Th>Likes</Th>
         </Tr>
         { orders.map((order)=>(
               <Tr key={order._id}>
               <Td>
-                <Name>{order.userId}</Name>
+                <Name>{order.title}</Name>
               </Td>
               <Date>{format(order.createdAt)}</Date>
-              <Amount>{`Rwf ${order.amount}`}</Amount>
               <Td className="widgetLgStatus">
-                <Button type={order.status} />
+                <Button type={order.likes} />
               </Td>
             </Tr>
         ))  }  

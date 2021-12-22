@@ -51,17 +51,16 @@ router.post("/",async (req,res)=>{
 //GET ALL PRODUCTS
 router.get("/",async (req,res)=>{
     const queryNew = req.query.new;
+    
     try{
-        let events;
+        let subscribers;
 
         if (queryNew){
-            events= await Product.find().sort({createdAt:-1}).limit(1);
-      
+            subscribers= await Subscriber.find().sort({createdAt:-1}).limit(8);
         } else{
-            events =  await Event.find();
+            subscribers =  await Subscriber.find();
         }
-         
-        res.status(200).json(events)
+        res.status(200).json(subscribers)
     } catch(err){
         res.status(500).json(err)
     }

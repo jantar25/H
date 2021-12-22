@@ -14,7 +14,7 @@ flex-direction: column;
 align_items:center;
 position:absolute;
 top:20%;
-width:70%;
+width:60%;
 
 h1{
     font-size: clamp(0.8rem, 4vw, 2rem);
@@ -46,13 +46,12 @@ input{
 `
 
 export const Button = styled.button`
-    flex:3;
+    flex:1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     height: 40px;
-    width: 100%;
     text-decoration: none;
     border: none;
     outline: none;
@@ -61,5 +60,5 @@ export const Button = styled.button`
     background: -webkit-linear-gradient(to right, #021B79, #0575E6); 
     background: linear-gradient(to right, #021B79, #0575E6);
     transition: all 1s ease; 
-
+    cursor:pointer;
 `

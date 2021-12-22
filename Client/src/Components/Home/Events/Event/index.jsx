@@ -1,8 +1,8 @@
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 // import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
-import CommentIcon from '@material-ui/icons/Comment';
 import {Link} from "react-router-dom"
-import {Container,Image,Info,Card,ImgContainer,IconContainer,Title,Desc} from './style'
+import {format } from 'timeago.js'
+import {Container,Image,Info,Card,ImgContainer,IconContainer,Date,Title,Desc} from './style'
 
 
 
@@ -21,7 +21,7 @@ const Event = ({item}) => {
                         </Info>
                         <IconContainer>
                             <ThumbUpAltIcon style={{color :"white"}}/>
-                            <CommentIcon style={{color :"white"}} />
+                            <Date>{format(item.createdAt)}</Date>
                         </IconContainer>
                     </Card>
                

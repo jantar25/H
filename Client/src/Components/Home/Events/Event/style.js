@@ -58,7 +58,10 @@ display:flex;
 flex-direction:column;
 bottom:10%;
 `
-
+export const Date = styled.span`
+font-weight: 300;
+color:red;
+`
 export const Title = styled.h3`
 color:#003366;
 margin-left:15px;

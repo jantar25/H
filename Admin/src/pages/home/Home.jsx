@@ -1,10 +1,9 @@
 import Chart from "../../components/chart/Chart";
-import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import { HomeContainer,HomeWidgets } from "./style";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 import WidgetLg from "../../components/widgetLg/WidgetLg";
 import { useEffect, useMemo, useState } from "react";
-import { userRequest } from "../../requestMethode";
+import { publicRequest } from "../../requestMethode";
 
 export default function Home() {
 
@@ -29,7 +28,7 @@ export default function Home() {
   useEffect(()=>{
     const getStats = async () =>{
       try {
-        const res = await userRequest.get("/users/stats")
+        const res = await publicRequest.get("/subscriber")
         res.data.map((item)=>{
           setUserStats(prev=>[...prev,{name:MONTHS[item._id-1], "Active User":item.total}]);
         })
@@ -41,7 +40,6 @@ export default function Home() {
   },[MONTHS])
   return (
     <HomeContainer>
-      <FeaturedInfo />
       <Chart data={useStats} title="User Analytics" grid dataKey="Active User"/>
       <HomeWidgets>
         <WidgetSm/>

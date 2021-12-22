@@ -55,12 +55,11 @@ router.get("/",async (req,res)=>{
         let events;
 
         if (queryNew){
-            events= await Product.find().sort({createdAt:-1}).limit(1);
+            events= await Event.find().sort({createdAt:-1}).limit(6);
       
         } else{
             events =  await Event.find();
         }
-         
         res.status(200).json(events)
     } catch(err){
         res.status(500).json(err)
